@@ -1,4 +1,4 @@
-# Dmitriy's Workshop v3.0.0
+# Dmitriy's Workshop
 This project is my personal portfolio as well as my workshop where I am learning and experimenting with new technologies.
 
 
@@ -7,5 +7,5 @@ This project is my personal portfolio as well as my workshop where I am learning
 * [Jekyll SEO plugin for Github pages](https://www.npmjs.com/package/jekyll)
 * [React](https://www.npmjs.com/package/react)
 * [React Router](https://www.npmjs.com/package/react-router)
-* [Redux](https://www.npmjs.com/package/redux) tbd
+* [Redux](https://www.npmjs.com/package/redux) ?
 * [React Bootstrap](react-bootstrap)
