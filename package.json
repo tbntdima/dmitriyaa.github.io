@@ -2,7 +2,10 @@
   "name": "dmitriyaa.github.io",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://dmitriyaa.github.io",
   "dependencies": {
+    "D": "^1.0.0",
+    "gh-pages": "^2.0.1",
     "react": "^16.8.3",
     "react-dom": "^16.8.3",
     "react-scripts": "2.1.5"
@@ -11,7 +14,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build -b master"
   },
   "eslintConfig": {
     "extends": "react-app"
