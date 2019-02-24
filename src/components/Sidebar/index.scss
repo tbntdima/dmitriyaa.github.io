@@ -1,0 +1,41 @@
+@import '../../styles/bootstrap-utilities';
+
+.sidebar {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  @include media-breakpoint-down(sm) {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  &__row {
+    &--logo {
+      transform: translateX(55px) translateY(65px) rotate(-40deg);
+      @include media-breakpoint-down(md) {
+        transform: rotate(-40deg) translateX(15px) translateY(45px)
+      }
+      @include media-breakpoint-down(sm) {
+        transform: none;
+      }
+    }
+    &--social-icons {
+      transform: translateY(-10px);
+      @include media-breakpoint-down(lg) {
+        transform: translateY(5px);
+      }
+      @include media-breakpoint-down(md) {
+        transform: translateY(-10px);
+      }
+      @include media-breakpoint-down(sm) {
+        transform: none;
+      }
+    }
+  }
+
+  &__logo {
+    width: 100%;
+    max-width: 230px;
+    @include media-breakpoint-down(sm) {
+      max-width: 300px;
+    }
+  }
+}

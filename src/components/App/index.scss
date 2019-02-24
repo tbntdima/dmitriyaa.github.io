@@ -1,0 +1,29 @@
+@import '../../styles/bootstrap-utilities';
+
+.page {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: #f2f2f2;
+
+  &__container {
+    position: relative;
+    z-index: 10;
+    max-width: 1000px;
+    margin: 50px auto 15px;
+  }
+
+  &__col {
+    &--left {
+      border-right: 2px solid hsla(0,0%,100%,.5);
+      @include media-breakpoint-down(sm) {
+        border-right: 0;
+      }
+    }
+    &--right {
+
+    }
+  }
+}

@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600');
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: #14161e;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+.color{
+  &--accent {
+    color: #47f4cf;
+  }
+}
