@@ -15,11 +15,11 @@ class App extends Component {
     return (
       <div className="page">
         <Container className="page__container">
-          <Row className="page__row">
+          <Row className="page__row transparent">
             <Col className="page__col page__col--left" xs={12} md={4}>
               <Sidebar />
             </Col>
-            <Col className="page__col page__col--right" xs={12} md={8}>
+            <Col className="page__col page__col--right pl-auto pl-md-4" xs={12} md={8}>
               <Main />
             </Col>
           </Row>
