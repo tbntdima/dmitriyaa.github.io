@@ -1,27 +1,35 @@
 self.__precacheManifest = [
   {
-    "revision": "866afdfb3b27feed3c42",
-    "url": "/static/css/main.df9de4ad.chunk.css"
+    "revision": "7f62d9214b107e36a1b9",
+    "url": "/static/css/main.e8581fed.chunk.css"
   },
   {
-    "revision": "866afdfb3b27feed3c42",
-    "url": "/static/js/main.866afdfb.chunk.js"
+    "revision": "7f62d9214b107e36a1b9",
+    "url": "/static/js/main.7f62d921.chunk.js"
   },
   {
     "revision": "fdfcfda2d9b1bf31db52",
     "url": "/static/js/runtime~main.fdfcfda2.js"
   },
   {
-    "revision": "af3ada5e06b244193f83",
+    "revision": "72076820776e9a463ee4",
     "url": "/static/css/2.ec23bc88.chunk.css"
   },
   {
-    "revision": "af3ada5e06b244193f83",
-    "url": "/static/js/2.af3ada5e.chunk.js"
+    "revision": "72076820776e9a463ee4",
+    "url": "/static/js/2.72076820.chunk.js"
   },
   {
     "revision": "6058f42a092736df567b33372ab7c82a",
     "url": "/static/media/logo.6058f42a.svg"
+  },
+  {
+    "revision": "837b970d5c77507b2ea4bb0ec18059a0",
+    "url": "/static/media/webpack.837b970d.svg"
+  },
+  {
+    "revision": "880994c061245d6629fee3a57bab88f2",
+    "url": "/static/media/laravel-mix.880994c0.svg"
   },
   {
     "revision": "65779ebcc35604a25c2ba77309c5b8af",
@@ -84,7 +92,7 @@ self.__precacheManifest = [
     "url": "/static/media/fa-solid-900.82905d8d.svg"
   },
   {
-    "revision": "04ddd1ec3c05bb18b910c994b176d8c9",
+    "revision": "2c2a7b477a7f10f22a26cc1242fb9ca0",
     "url": "/index.html"
   }
 ];
