@@ -12,7 +12,7 @@ class Contributions extends Component {
 
   render() {
     return (
-      <div>
+      <div className="mb-3">
         {this.state.contributionsList.map(contribution => (
           <div key={contribution.id} className="contribution transparent-little">
             <div className="contribution__presentation">
@@ -28,9 +28,7 @@ class Contributions extends Component {
               >
                 <i className={`fab ${contribution.faIcon}`}></i> {contribution.title}
               </a>
-              {contribution.description.map((paragraph, index) => (
-                <p key={index} className="contribution__text">{paragraph}</p>
-              ))}
+              {contribution.description}
             </div>
           </div>
         ))}

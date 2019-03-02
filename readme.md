@@ -11,3 +11,8 @@ This project is my personal portfolio as well as my workshop where I am learning
 * [Redux](https://www.npmjs.com/package/redux) - probably not needed
 * [React Bootstrap](react-bootstrap)
 * Prop Types
+
+
+## Todos
+* Add this project to projects
+* Add React Accordion Router to contribution

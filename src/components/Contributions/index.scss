@@ -37,7 +37,7 @@
         align-items: center;
         font-size: 1.1rem;
         color: #47F4CF;
-        text-decoration: none;
+        text-decoration: none !important;
         i {
             display: none;
             transition: .45s;
@@ -62,11 +62,14 @@
             }
         }
     }
-    &__text {
+    p {
         margin: .5rem 0;
         font-size: .8rem;
         @include media-breakpoint-up(sm) {
             font-size: .9rem;
         }
+    }
+    a {
+      text-decoration: underline;
     }
 }

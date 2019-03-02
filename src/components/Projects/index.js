@@ -13,7 +13,7 @@ class Projects extends Component {
 
   render() {
     return (
-      <div>
+      <div className="mb-3">
         {this.state.projectsList.map(project => (
           <div key={project.id} className="portfolio">
               <div className="portfolio__header">

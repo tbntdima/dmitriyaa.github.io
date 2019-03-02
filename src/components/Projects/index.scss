@@ -1,5 +1,8 @@
 .portfolio {
-    margin: .5rem 0 2rem;
+    margin: 0 0 2rem;
+    &:first-child {
+      margin-top: -.5rem;
+    }
     &:last-child {
         margin-bottom: 0;
     }
