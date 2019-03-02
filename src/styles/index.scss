@@ -23,6 +23,13 @@ p {
   line-height: 1.8;
 }
 
+a {
+  color: #47f4cf;
+  &:hover {
+    color: #47f4cf;
+  }
+}
+
 .color{
   &--accent {
     color: #47f4cf;

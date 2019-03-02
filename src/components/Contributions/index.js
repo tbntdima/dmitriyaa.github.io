@@ -14,7 +14,7 @@ class Contributions extends Component {
     return (
       <div>
         {this.state.contributionsList.map(contribution => (
-          <div className="contribution transparent-little">
+          <div key={contribution.id} className="contribution transparent-little">
             <div className="contribution__presentation">
               <img className="contribution__image" src={contribution.image} alt={contribution.image_subtitle} />
               <span className="contribution__title">{contribution.image_subtitle}</span>

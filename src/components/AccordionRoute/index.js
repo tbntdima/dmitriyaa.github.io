@@ -27,6 +27,8 @@ const AccordionRoute = ({component: Component, ...rest}) => {
             appearActive: 'animated bounceInDown',
             enter: 'animated',
             enterActive: 'animated bounceInDown',
+            // exit: 'animated',
+            // exitActive: 'animated bounceInDown'
           }}
           appear
         >
