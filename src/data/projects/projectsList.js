@@ -16,16 +16,14 @@ const projectsList = [
     description: (
       <div>
         <p><strong>Setup</strong>, <strong>design</strong> and <strong>customization</strong> of WordPress theme for airport transfers agency.</p>
-        <p>
-            Implemented a complex <a href="http://www.baku2go.az/tour/transfers/" target="_blank" rel="noopener noreferrer">order form</a>, which:
-            <ul class="portfolio__ul">
-                <li>validates user's input</li>
-                <li>uses google maps api to hint a place while user is typing</li>
-                <li>has a custom date and time picker</li>
-                <li>calculates and displays the cost of the transfer, based on user's choise</li>
-                <li>sends confirmation email both to client and to website admin</li>
-            </ul>
-        </p>
+        <p>Implemented a complex <a href="http://www.baku2go.az/tour/transfers/" target="_blank" rel="noopener noreferrer">order form</a>, which:</p>
+        <ul className="portfolio__ul">
+            <li>validates user's input</li>
+            <li>uses google maps api to hint a place while user is typing</li>
+            <li>has a custom date and time picker</li>
+            <li>calculates and displays the cost of the transfer, based on user's choise</li>
+            <li>sends confirmation email both to client and to website admin</li>
+        </ul>
       </div>
     ),
     img_mobile: b2g_m,
