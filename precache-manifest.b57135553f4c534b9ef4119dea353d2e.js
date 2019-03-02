@@ -1,23 +1,23 @@
 self.__precacheManifest = [
   {
-    "revision": "5872d493c1bd580be4f7",
-    "url": "/static/css/main.8ea4eead.chunk.css"
+    "revision": "828fc422d597ec091aa6",
+    "url": "/static/css/main.42e1f558.chunk.css"
   },
   {
-    "revision": "5872d493c1bd580be4f7",
-    "url": "/static/js/main.5872d493.chunk.js"
+    "revision": "828fc422d597ec091aa6",
+    "url": "/static/js/main.828fc422.chunk.js"
   },
   {
     "revision": "fdfcfda2d9b1bf31db52",
     "url": "/static/js/runtime~main.fdfcfda2.js"
   },
   {
-    "revision": "360ce42be67937379d9f",
+    "revision": "b2e0ca71ad3d74499da7",
     "url": "/static/css/2.ec23bc88.chunk.css"
   },
   {
-    "revision": "360ce42be67937379d9f",
-    "url": "/static/js/2.360ce42b.chunk.js"
+    "revision": "b2e0ca71ad3d74499da7",
+    "url": "/static/js/2.b2e0ca71.chunk.js"
   },
   {
     "revision": "6058f42a092736df567b33372ab7c82a",
@@ -30,6 +30,22 @@ self.__precacheManifest = [
   {
     "revision": "1dbb9abda71b5652c21c763653d377dd",
     "url": "/static/media/wad-d.1dbb9abd.jpg"
+  },
+  {
+    "revision": "9e5e5fc8c073459af671b448af983ace",
+    "url": "/static/media/avtoskola-m.9e5e5fc8.jpg"
+  },
+  {
+    "revision": "ecd47894fffd78f532354e4655db8754",
+    "url": "/static/media/avtoskola-d.ecd47894.jpg"
+  },
+  {
+    "revision": "fad11efc8ac1bd3fc895adbb5f938c35",
+    "url": "/static/media/b2g-m.fad11efc.jpg"
+  },
+  {
+    "revision": "78414b3e969f0a4e2d2383edd75e609f",
+    "url": "/static/media/b2g-d.78414b3e.jpg"
   },
   {
     "revision": "837b970d5c77507b2ea4bb0ec18059a0",
@@ -84,12 +100,12 @@ self.__precacheManifest = [
     "url": "/static/media/fa-regular-400.e7e957c8.svg"
   },
   {
-    "revision": "b70cea0339374107969eb53e5b1f603f",
-    "url": "/static/media/fa-solid-900.b70cea03.ttf"
-  },
-  {
     "revision": "b5596f4d339f99e3d69bc41be78db962",
     "url": "/static/media/fa-solid-900.b5596f4d.eot"
+  },
+  {
+    "revision": "b70cea0339374107969eb53e5b1f603f",
+    "url": "/static/media/fa-solid-900.b70cea03.ttf"
   },
   {
     "revision": "80533988ff5fecd5be26557d08ce8237",
@@ -100,7 +116,7 @@ self.__precacheManifest = [
     "url": "/static/media/fa-solid-900.82905d8d.svg"
   },
   {
-    "revision": "47816cc59561610e677c5a57f3e65d65",
+    "revision": "01a2b159fe4a088079df295c09883d5f",
     "url": "/index.html"
   }
 ];
