@@ -25,14 +25,14 @@ class Main extends Component {
         </Row>
         <Row>
           <Col xs={12}>
-            <AccortionLink to="/skills" className="subpage__link">Skills</AccortionLink>
-            <AccordionRoute exact path="/skills" component={Skills}/>
-
             <AccortionLink to="/projects" className="subpage__link">Projects</AccortionLink>
             <AccordionRoute path="/projects" component={Projects}/>
 
             <AccortionLink to="/contributions" className="subpage__link">Contributions</AccortionLink>
             <AccordionRoute path="/contributions" component={Contributions}/>
+
+            <AccortionLink to="/skills" className="subpage__link">Skills</AccortionLink>
+            <AccordionRoute exact path="/skills" component={Skills}/>
 
             <AccortionLink to="/contact" className="subpage__link">Contact</AccortionLink>
             <AccordionRoute path="/contact" component={Contact}/>

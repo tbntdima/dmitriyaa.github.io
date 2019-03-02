@@ -25,6 +25,19 @@ p {
 .color{
   &--accent {
     color: #47f4cf;
+    text-decoration: none;
+    &:hover {
+      color: #47f4cf;
+      text-decoration: none;
+    }
+  }
+  &--secondary {
+    color: #f2cd5e;
+    text-decoration: none;
+    &:hover {
+      color: #f2cd5e;
+      text-decoration: none;
+    }
   }
 }
 

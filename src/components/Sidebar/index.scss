@@ -9,9 +9,12 @@
   }
   &__row {
     &--logo {
-      transform: translateX(55px) translateY(65px) rotate(-40deg);
+      transform: translateX(51px) translateY(28px) rotate(-35deg);
+      @include media-breakpoint-down(lg) {
+        transform: translateX(30px) translateY(28px) rotate(-35deg);
+      }
       @include media-breakpoint-down(md) {
-        transform: rotate(-40deg) translateX(15px) translateY(45px)
+        transform: translateX(-24px) translateY(49px) rotate(-35deg);
       }
       @include media-breakpoint-down(sm) {
         transform: none;
@@ -20,10 +23,10 @@
     &--social-icons {
       transform: translateY(-10px);
       @include media-breakpoint-down(lg) {
-        transform: translateY(5px);
+        transform: translateY(-5px);
       }
       @include media-breakpoint-down(md) {
-        transform: translateY(-10px);
+        transform: translateY(0);
       }
       @include media-breakpoint-down(sm) {
         transform: none;
@@ -32,9 +35,9 @@
   }
 
   &__logo {
-    width: 100%;
-    max-width: 230px;
+    width: 230px;
     @include media-breakpoint-down(sm) {
+      width: 100%;
       max-width: 300px;
     }
   }

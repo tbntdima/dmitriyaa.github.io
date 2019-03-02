@@ -12,5 +12,8 @@
       text-decoration: none;
       transform: translateX(12px);
     }
+    &:focus {
+      transform: translateX(0);
+    }
   }
 }

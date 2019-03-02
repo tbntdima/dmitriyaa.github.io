@@ -12,7 +12,7 @@ const AccordionRoute = ({component: Component, ...rest}) => {
   return (
     <Route {...rest} children={({match}) => (
       <AnimateHeight
-      duration={ 300 }
+      duration={ 500 }
       height={  match !== null ? 'auto' : 0 }
     >
       <div style={{overflow: 'hidden'}}>
@@ -20,7 +20,7 @@ const AccordionRoute = ({component: Component, ...rest}) => {
           in={match !== null}
           timeout={{
             enter: 1000,
-            exit: 300
+            exit: 0
           }}
           classNames={{
             appear: 'animated',

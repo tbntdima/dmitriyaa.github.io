@@ -18,7 +18,7 @@ class SocialIcons extends Component {
               return (
                 <a
                   key={item.id}
-                  className="social-icons__icon"
+                  className="social-icons__icon color--accent"
                   target="_blank" rel="noopener noreferrer"
                   href={item.url}
                 >
