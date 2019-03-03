@@ -47,7 +47,6 @@ class Contact extends Component {
       })
     })
     .then(response => {
-      console.log(response);
       if (response.status >= 200 && response.status < 300) {
         this.setState({
           status: 'done',
@@ -64,7 +63,6 @@ class Contact extends Component {
       }
     })
     .catch(err => {
-      console.log(err);
       this.setState({
         status: 'done',
         response: 'Whoos, something went wrong, please try again in a few minutes...'
