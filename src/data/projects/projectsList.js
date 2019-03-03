@@ -17,10 +17,10 @@ const projectsList = [
     url_git: 'https://github.com/dmitriyaa/dmitriyaa.github.io/tree/development',
     description: (
       <div>
-        <p>Sorry for a little <a href="https://en.wikipedia.org/wiki/Recursion" target="_blank" rel="noopener noreferrer">recursion</a> here. But this website is also my project <i class="fas fa-lg fa-grin-beam-sweat color--secondary" /></p>
+        <p>Sorry for a little <a href="https://en.wikipedia.org/wiki/Recursion" target="_blank" rel="noopener noreferrer">recursion</a> here. But this website is also my project <i className="fas fa-lg fa-grin-beam-sweat color--secondary" /></p>
         <p>Basically this is my workshop where you can find my recent projects.</p>
         <p>This is also my playground where I am trygin to apply/test/try new technologies that I've learned.</p>
-        <p>Website is <a href="https://github.com/dmitriyaa/dmitriyaa.github.io/tree/development" target="_blank" rel="noopener noreferrer">open source</a>, so if you are interested in how something is done, you can have a look. Also your <a href="https://github.com/dmitriyaa/dmitriyaa.github.io/tree/development" target="_blank" rel="noopener noreferrer">contributions</a> are more than welcome <i class="fas fa-lg fa-smile color--secondary" /></p>
+        <p>Website is <a href="https://github.com/dmitriyaa/dmitriyaa.github.io/tree/development" target="_blank" rel="noopener noreferrer">open source</a>, so if you are interested in how something is done, you can have a look. Also your <a href="https://github.com/dmitriyaa/dmitriyaa.github.io/tree/development" target="_blank" rel="noopener noreferrer">contributions</a> are more than welcome <i className="fas fa-lg fa-smile color--secondary" /></p>
       </div>
     ),
     img_mobile: mob,
