@@ -1,5 +1,5 @@
+title: test
+description: hello world
+
 plugins:
   - jekyll-seo-tag
-
-title: 'test'
-description: 'hello world'
