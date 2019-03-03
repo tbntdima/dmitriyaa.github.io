@@ -128,7 +128,7 @@ self.__precacheManifest = [
     "url": "/static/media/fa-solid-900.82905d8d.svg"
   },
   {
-    "revision": "54c94192fe15249afa6031f743012fff",
+    "revision": "fdff7f02defcbe6a244c61f79874b436",
     "url": "/index.html"
   }
 ];
