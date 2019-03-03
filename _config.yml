@@ -3,3 +3,4 @@ description: hello world
 
 plugins:
   - jekyll-seo-tag
+  - jekyll-sitemap
