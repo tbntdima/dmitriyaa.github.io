@@ -1,27 +1,27 @@
 self.__precacheManifest = [
   {
-    "revision": "f294424efacf25a16c3a",
-    "url": "/static/css/main.6b3c322e.chunk.css"
+    "revision": "880994c061245d6629fee3a57bab88f2",
+    "url": "/static/media/laravel-mix.880994c0.svg"
   },
   {
-    "revision": "f294424efacf25a16c3a",
-    "url": "/static/js/main.8d2cc343.chunk.js"
+    "revision": "458213b977c554f009fc",
+    "url": "/static/css/main.c0bfb083.chunk.css"
   },
   {
     "revision": "fdfcfda2d9b1bf31db52",
     "url": "/static/js/runtime~main.c5541365.js"
   },
   {
-    "revision": "8e346e9eb4a7f7a18702",
-    "url": "/static/css/2.7f64a3e1.chunk.css"
+    "revision": "82905d8d1c06969df11c8c378e9bdd4c",
+    "url": "/static/media/fa-solid-900.82905d8d.svg"
   },
   {
-    "revision": "8e346e9eb4a7f7a18702",
+    "revision": "277f461e13c86335bf93",
     "url": "/static/js/2.2f0a3e4f.chunk.js"
   },
   {
-    "revision": "6058f42a092736df567b33372ab7c82a",
-    "url": "/static/media/logo.6058f42a.svg"
+    "revision": "acc859cd7f3f7d4d09f071b26812ee09",
+    "url": "/static/media/logo.acc859cd.svg"
   },
   {
     "revision": "dbb08e8df5494094671955ad42f4f980",
@@ -64,8 +64,8 @@ self.__precacheManifest = [
     "url": "/static/media/webpack.837b970d.svg"
   },
   {
-    "revision": "880994c061245d6629fee3a57bab88f2",
-    "url": "/static/media/laravel-mix.880994c0.svg"
+    "revision": "458213b977c554f009fc",
+    "url": "/static/js/main.38d094e8.chunk.js"
   },
   {
     "revision": "65779ebcc35604a25c2ba77309c5b8af",
@@ -124,11 +124,11 @@ self.__precacheManifest = [
     "url": "/static/media/fa-brands-400.80533988.svg"
   },
   {
-    "revision": "82905d8d1c06969df11c8c378e9bdd4c",
-    "url": "/static/media/fa-solid-900.82905d8d.svg"
+    "revision": "277f461e13c86335bf93",
+    "url": "/static/css/2.6f0d5d6c.chunk.css"
   },
   {
-    "revision": "3ca42119275e2e348e222fa81c11e81f",
+    "revision": "61fe084da2482c44e12d7e6e76906691",
     "url": "/index.html"
   }
 ];
