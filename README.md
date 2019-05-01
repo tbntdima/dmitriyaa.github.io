@@ -53,3 +53,9 @@ I will try to use redux, but right now I don't see a place for it.
 I want create a theming with two modes (light, dark). So I need to do the research here as well.
 
 This time I am not going to use React-Bootstrap, all the components will be custom
+
+## Installation and usage
+
+- `yarn`
+
+- `yarn start`
