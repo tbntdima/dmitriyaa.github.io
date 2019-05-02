@@ -34,9 +34,9 @@ I want to expand it by adding a blog, but I don't want to create and setup a bac
 
 - Styled-components ??? + theming
 
-- Formik (for email form, maybe I'll add subscription)
+- Formik - for email form, maybe I'll add subscription, try to connect to redux
 
-- Redux ??? - no use right now
+- Redux - for globaly shared variables like theme mode
 
 - Testing ???
 
