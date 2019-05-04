@@ -1,0 +1,19 @@
+{
+  "name": "dmitriyaa.github.io",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/dmitriyaa/dmitriyaa.github.io.git",
+  "author": "Dmitriy An <an.dmitriy01@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "export": "yarn run build && next export"
+  },
+  "dependencies": {
+    "next": "^8.1.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  }
+}
