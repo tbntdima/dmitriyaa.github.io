@@ -60,4 +60,4 @@ This time I am not going to use React-Bootstrap, all the components will be cust
 
 - `yarn`
 
-- `yarn start`
+- `yarn dev`
