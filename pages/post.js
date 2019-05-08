@@ -3,7 +3,7 @@ import { withRouter } from 'next/router';
 import matter from 'gray-matter';
 import Markdown from 'react-markdown';
 import Link from 'next/link';
-import '../src/theme/global.scss';
+import '../theme/global.scss';
 
 class Post extends Component {
   static async getInitialProps({ query }) {

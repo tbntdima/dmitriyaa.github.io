@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import matter from 'gray-matter';
 import Link from 'next/link';
-import '../src/theme/global.scss';
+import '../theme/global.scss';
 
 class Home extends Component {
   static async getInitialProps() {
