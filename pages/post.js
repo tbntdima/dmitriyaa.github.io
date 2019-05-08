@@ -1,25 +1,36 @@
+import React, { Component } from 'react';
+import { withRouter } from 'next/router';
 import matter from 'gray-matter';
 import Markdown from 'react-markdown';
-
-import rawContent from '../posts/my-first-post/index.md';
+import Link from 'next/link';
 import '../src/theme/global.scss';
 
-const contentObj = matter(rawContent);
-const contentBody = contentObj.content;
+class Post extends Component {
+  static async getInitialProps({ query }) {
+    const post = await import(`../posts/${query.id}/index.md`);
+    const document = matter(post.default);
 
-const Post = () => {
-  return (
-    <div>
-      Welcome to Next.js!
-      <Markdown
-        source={contentBody}
-        transformImageUri={uri => {
-          const img = require(`../posts/my-first-post/${uri}`);
-          return img;
-        }}
-      />
-    </div>
-  );
-};
+    return {
+      document
+    };
+  }
 
-export default Post;
+  render() {
+    return (
+      <div>
+        <Link href="/" as="/">
+          <a>Back</a>
+        </Link>
+        <Markdown
+          source={this.props.document.content}
+          transformImageUri={uri => {
+            const img = require(`../posts/my-first-post/${uri}`);
+            return img;
+          }}
+        />
+      </div>
+    );
+  }
+}
+
+export default withRouter(Post);

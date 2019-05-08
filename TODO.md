@@ -4,7 +4,7 @@
 
 - [x] enable scss files
 
-- [ ] setup proper routing
+- [x] setup proper routing
 
 - [x] setup homepage posts list
 
