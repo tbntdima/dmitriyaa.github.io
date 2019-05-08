@@ -13,6 +13,7 @@ class Home extends Component {
      *
      * Note: while developing, if you update any post this won't by triggered
      * so you will have to refresh the page in browser
+     * If you delete any post, you should restart the server
      * */
     const getAllPosts = contextModule => {
       // keys are kind of references to the files
