@@ -1,14 +1,22 @@
 # Todo list
 
-- [x] make refere images in .md files
+- [ ] setup \_app.js as a root component
 
-- [x] enable scss files
+- [ ] add theming
 
-- [x] setup proper routing
+- [ ] apply the design and structure from current version of dmitriyaa.github.io
 
-- [x] setup homepage posts list
+- [ ] add redux
 
-- [ ] setup sourting by date
+- [ ] add which slug was open on homepage (#blog, #projects) so on back button it's on the same place
+
+- [x] enable posts/index.md files to use images from the local folder
+
+- [x] setup server to display posts on page refresh
+
+- [x] get posts list (blog / projects) on homepage via getInitialProps
+
+- [ ] sort posts list by date, from oldest to newest
 
 - [ ] style homepage blog posts
 
@@ -16,20 +24,8 @@
 
 - [ ] style code blocks after .md to jsx conversion
 
-- [ ] add redux
+- [x] enable scss files import
 
-- [ ] add which slug was open
-
-- [ ] add theming
+- [ ] setup next export routing with filesystem
 
 - [ ] add .nojekyll file to out
-
-- [ ] setup export routing with filesystem
-
-- [ ] add server support, event thougth only for development
-
-- [ ] setup \_app.js as a root component
-
-## Notes
-
-- [Markdown blog example](https://blog.toukopeltomaa.com/Next-JS-Markdown-blog/)

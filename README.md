@@ -14,7 +14,7 @@ I want to expand it by adding a blog, but I don't want to create and setup a bac
 
 - Initial inspiration came from Dan Abramov's website - [overreacted.io](https://overreacted.io/).
 
-- I am constantly learning a lot of new material and I think describing it im my own words is a great way to:
+- I am constantly learning a lot of new material and I think describing it in my own words is a great way to:
 
   - consolidate the knowledge
 
@@ -55,6 +55,15 @@ I will try to use redux, but right now I don't see a place for it.
 I want create a theming with two modes (light, dark). So I need to do the research here as well.
 
 This time I am not going to use React-Bootstrap, all the components will be custom
+
+### 06.05.2019
+
+- Decided to base the architecture of the blog based on this project: [next-blog](https://github.com/tscanlin/next-blog)
+
+### 08.05.2019
+
+- Changed my mind of using next-blog. Because it has some problematic and annoying things to handle.
+- Found a better solution - [Markdown blog](https://blog.toukopeltomaa.com/Next-JS-Markdown-blog/). There is much less boilerplate.
 
 ## Installation and usage
 
