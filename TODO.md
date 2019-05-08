@@ -22,6 +22,8 @@
 
 - [ ] add .nojekyll file to out
 
+- [ ] setup export routing with filesystem
+
 - [ ] add server support, event thougth only for development
 
 ## Notes
