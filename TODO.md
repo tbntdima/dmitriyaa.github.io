@@ -8,6 +8,8 @@
 
 - [x] setup homepage posts list
 
+- [ ] setup sourting by date
+
 - [ ] style homepage blog posts
 
 - [ ] style homepage project posts
