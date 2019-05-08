@@ -26,6 +26,8 @@
 
 - [ ] add server support, event thougth only for development
 
+- [ ] setup \_app.js as a root component
+
 ## Notes
 
 - [Markdown blog example](https://blog.toukopeltomaa.com/Next-JS-Markdown-blog/)
