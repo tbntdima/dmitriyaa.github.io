@@ -16,6 +16,8 @@
 
 - [ ] add redux
 
+- [ ] add which slug was open
+
 - [ ] add theming
 
 - [ ] add .nojekyll file to out
