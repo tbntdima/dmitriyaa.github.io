@@ -1,10 +1,12 @@
 ---
 title: My first post
-category: 'project'
+category: 'blog'
 date: '08-09-2019'
-spoiler: This is just a testing post
+spoiler: Hyouka
 ---
 
-## Hello world 123
+## My first post
 
-![img](rndmmg123.png)
+hyouka
+
+![img](rndmmg.png)
