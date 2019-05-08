@@ -6,7 +6,11 @@
 
 - [ ] setup proper routing
 
-- [ ] setup homepage posts list
+- [x] setup homepage posts list
+
+- [ ] style homepage blog posts
+
+- [ ] style homepage project posts
 
 - [ ] style code blocks after .md to jsx conversion
 
