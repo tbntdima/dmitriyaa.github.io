@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import matter from 'gray-matter';
-import Markdown from 'react-markdown';
+import Link from 'next/link';
+import '../src/theme/global.scss';
 
 class Home extends Component {
   static async getInitialProps() {
@@ -9,6 +10,9 @@ class Home extends Component {
      *
      * contextModule documentation
      * https://webpack.js.org/guides/dependency-management#requirecontext
+     *
+     * Note: while developing, if you update any post this won't by triggered
+     * so you will have to refresh the page in browser
      * */
     const getAllPosts = contextModule => {
       // keys are kind of references to the files
@@ -54,30 +58,18 @@ class Home extends Component {
     return (
       <div>
         <h1>Blog by Dmitriy An</h1>
-        <h2>Projects:</h2>
-        {projectPosts.map(post => (
-          <div key={post.slug}>
-            <h3>{post.document.data.title}</h3>
-            <Markdown
-              source={post.document.content}
-              transformImageUri={uri => {
-                const img = require(`../posts/${post.slug}/${uri}`);
-                return img;
-              }}
-            />
-          </div>
-        ))}
         <h2>Blog:</h2>
         {blogPosts.map(post => (
           <div key={post.slug}>
-            <h3>{post.document.data.title}</h3>
-            <Markdown
-              source={post.document.content}
-              transformImageUri={uri => {
-                const img = require(`../posts/${post.slug}/${uri}`);
-                return img;
-              }}
-            />
+            <h3>
+              <Link
+                href={{ pathname: '/post', query: { id: post.slug } }}
+                as={post.slug}
+              >
+                <a>{post.document.data.title}</a>
+              </Link>
+            </h3>
+            <p>{post.document.data.spoiler}</p>
           </div>
         ))}
       </div>
