@@ -12,4 +12,6 @@ This post is inspired by [Tania Rascia](https://www.taniarascia.com/learn/)
 
 - [ ] styled components / css / theming / typography lib
 
-- [ ]
+- [ ] git
+
+- [ ] redux
