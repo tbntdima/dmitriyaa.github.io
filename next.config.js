@@ -9,6 +9,13 @@ module.exports = withSass(
         use: 'raw-loader'
       });
       return config;
+    },
+    exportPathMap: function() {
+      return {
+        '/': { page: '/' },
+        '/my-first-post': { page: '/post', query: { id: 'my-first-post' } },
+        '/my-second-post': { page: '/post', query: { id: 'my-second-post' } }
+      };
     }
   })
 );
