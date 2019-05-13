@@ -12,4 +12,8 @@
 
   - [ ] should I keep typography?
 
+  - [ ] introduse redux for theme state control
+
+  - [ ] reserach how to do theming
+
 - [ ] style code block from .md to .html
