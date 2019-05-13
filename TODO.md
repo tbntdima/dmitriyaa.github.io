@@ -1,5 +1,9 @@
 # Todo List
 
+- [ ] setup gh pages deploy script
+
+  - [ ] test
+
 - [ ] add 'projects' with similar functionality to 'blog'
 
 - [ ] move design from old version of the site
