@@ -15,3 +15,5 @@
 - [ ] add 'projects' with similar functionality to 'blog'
 
 - [ ] setup gh pages deploy script
+
+- [ ] add footer "Handcrafted with by me 2019"
