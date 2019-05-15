@@ -17,3 +17,5 @@ description: What I've learnet building this blog
   - vertical rhythm - margin bottom 1 rhythm on all elements
 
 - [Redux in Gatsby](https://medium.freecodecamp.org/how-to-get-started-with-gatsby-2-and-redux-ae1c543571ca)
+
+- [Organize CSS properties](https://9elements.com/css-rule-order/)
