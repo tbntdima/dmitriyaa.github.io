@@ -2,13 +2,13 @@
 
 - [ ] move design from old version of the site
 
-  - [ ] identify styling methodology
+  - [x] identify styling methodology - styled-components + [rebassjs](https://github.com/rebassjs/grid)
 
-  - [ ] should I keep typography?
-
-  - [ ] introduse redux for theme state control
+  - [x] should I keep typography? - yes, its very usefull actually
 
   - [ ] reserach how to do theming
+
+  - [ ] introduse redux for theme state control
 
 - [ ] style code block from .md to .html
 
@@ -17,3 +17,5 @@
 - [ ] setup gh pages deploy script
 
 - [ ] add footer "Handcrafted with by me 2019"
+
+- [ ] upgrade images with gatsby sharp
