@@ -1,25 +1,27 @@
-import React, { Component } from "react"
+import React from "react"
+import { connect } from "react-redux"
 
 import Layout from "../components/layout"
+import { toggleDarkMode } from "../state/app"
 
-class Homepage extends Component {
-  render() {
-    return (
-      <Layout>
-        <h1>I'm Dmitriy An</h1>
-        <p>
-          Professional Front-End Web Developer, who is building beautifull,
-          clean and modern websites. With use of latest web technologies.
-        </p>
-        <p>
-          I love JavaScript, and currently focused on React library and its
-          ecosystem. Although I mainly specialize in Front-End, I have some
-          experience with Back-End as well.
-          <a href="google.com">Google</a>
-        </p>
-      </Layout>
-    )
-  }
-}
+const Homepage = ({ toggleDarkMode }) => (
+  <Layout>
+    <h1>I'm Dmitriy An</h1>
+    <p>Lorem ipsum something</p>
+    <p>
+      <a href="google.com">Google.com</a>
+    </p>
+    <button onClick={toggleDarkMode}>Toggle mode</button>
+  </Layout>
+)
 
-export default Homepage
+const mapDispatchToProps = dispatch => ({
+  toggleDarkMode: () => {
+    dispatch(toggleDarkMode())
+  },
+})
+
+export default connect(
+  null,
+  mapDispatchToProps
+)(Homepage)

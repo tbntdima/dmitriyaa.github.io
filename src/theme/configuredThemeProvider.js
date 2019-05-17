@@ -17,7 +17,7 @@ const ConfiguredThemeProvider = ({ isDarkMode, children }) => {
 }
 
 const mapStateToProps = ({ app }) => ({
-  isDarkTheme: app.isDarkTheme,
+  isDarkMode: app.isDarkMode,
 })
 
 export default connect(

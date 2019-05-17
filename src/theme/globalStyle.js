@@ -6,6 +6,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   body {
+    transition: .5S
     background: ${props => props.theme.colorBackground}
     color: ${props => props.theme.colorText}
   }
