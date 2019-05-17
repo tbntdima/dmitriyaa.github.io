@@ -4,10 +4,12 @@ const sharedTheme = {
 
 export const darkTheme = {
   ...sharedTheme,
-  accentColor: "red",
+  colorMain: "#47f4cf",
+  colorAccent: "#f2cd5e",
 }
 
 export const lightTheme = {
   ...sharedTheme,
-  accentColor: "yellow",
+  colorMain: "green",
+  colorAccent: "orange",
 }
