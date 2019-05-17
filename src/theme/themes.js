@@ -6,6 +6,8 @@ export const darkTheme = {
   ...sharedTheme,
   colorMain: "#47f4cf",
   colorAccent: "#f2cd5e",
+  // colorText: "white",
+  // colorBackground: "black",
 }
 
 export const lightTheme = {
