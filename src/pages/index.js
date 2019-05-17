@@ -2,15 +2,14 @@ import React from "react"
 import { connect } from "react-redux"
 
 import Layout from "../components/layout"
+import SEO from "../components/seo"
+import Bio from "../components/bio"
 import { toggleDarkMode } from "../state/app"
 
 const Homepage = ({ toggleDarkMode }) => (
   <Layout>
-    <h1>I'm Dmitriy An</h1>
-    <p>Lorem ipsum something</p>
-    <p>
-      <a href="google.com">Google.com</a>
-    </p>
+    <SEO title="" />
+    <Bio />
     <button onClick={toggleDarkMode}>Toggle mode</button>
   </Layout>
 )

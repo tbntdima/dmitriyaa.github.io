@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Dmitriy's workshop`,
+    title: `Dmitriy An`,
     author: `Dmitriy An`,
     description: `Personal website and blog by Dmitriy An.`,
     siteUrl: `https://dmitriyaa.github.io/`,
@@ -60,8 +60,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Dmitriy's Workshop`,
-        short_name: `Dmitriy's Workshop`,
+        name: `Dmitriy An`,
+        short_name: `Dmitriy An`,
         start_url: `/`,
         background_color: `#14161e`,
         theme_color: `#47f4cf`,
