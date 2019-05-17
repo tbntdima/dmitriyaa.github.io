@@ -3,7 +3,7 @@ import styled from "styled-components"
 import { Box } from "@rebass/grid"
 
 import Sidebar from "./sidebar"
-import { rhythm } from "../utils/typography"
+import { rhythm } from "../theme/typography"
 
 const PageWrapper = styled.div`
   position: relative;
