@@ -1,19 +1,18 @@
 import Typography from "typography"
-import GithubTheme from "typography-theme-github"
-import "./global.css"
+import fairyGatesTheme from "typography-theme-fairy-gates"
 
-GithubTheme.overrideThemeStyles = () => {
+fairyGatesTheme.overrideThemeStyles = () => {
   return {
-    "a.gatsby-resp-image-link": {
-      boxShadow: `none`,
-    },
-    h1: {
-      borderBottom: `none`,
+    a: {
+      backgroundImage: `none`,
+      textShadow: `none`,
     },
   }
 }
 
-const typography = new Typography(GithubTheme)
+fairyGatesTheme.baseFontSize = "17px"
+
+const typography = new Typography(fairyGatesTheme)
 
 // Hot reload typography in development.
 if (process.env.NODE_ENV !== `production`) {
