@@ -19,7 +19,13 @@ const GlobalStyle = createGlobalStyle`
   }
 
   a {
+    border-bottom: 1.35px solid ${props => props.theme.colorMain};
     color: ${props => props.theme.colorMain};
+  }
+
+  em {
+    color: ${props => props.theme.colorMain};
+    font-style: normal;
   }
 `
 
