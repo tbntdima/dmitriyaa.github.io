@@ -4,11 +4,11 @@
 
   - [x] identify styling methodology - styled-components + [rebassjs](https://github.com/rebassjs/grid)
 
-  - [x] should I keep typography? - yes, its very usefull actually
+  - [x] should I keep typography? - yes, its very useful actually
 
-  - [ ] reserach how to do theming
+  - [ ] research how to use themes
 
-  - [ ] introduse redux for theme state control
+  - [ ] introduce redux for theme state control
 
 - [ ] style code block from .md to .html
 
