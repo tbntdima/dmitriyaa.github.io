@@ -3,7 +3,7 @@ import React from "react"
 const Bio = () => {
   return (
     <div>
-      <h1>I'm Dmitriy An</h1>
+      <h1 style={{ marginTop: 0 }}>I'm Dmitriy An</h1>
       <p>
         Professional self-taught <em>Frontend Developer</em>, who is building
         beautiful, clean and modern websites.

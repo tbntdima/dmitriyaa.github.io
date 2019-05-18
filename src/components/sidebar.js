@@ -5,10 +5,9 @@ import { Link } from "gatsby"
 import Socials from "./socials"
 import logo from "../images/logo.jpg"
 
-const LogoContainer = styled.div`
+const Logo = styled.div`
   transition: 0.3s;
-  @media (max-width: 768px) {
-    transform: rotate(90deg);
+  @media (max-width: ${props => props.theme.bp.mobile}) {
     margin: 0 auto;
     max-width: 200px;
   }
@@ -17,11 +16,11 @@ const LogoContainer = styled.div`
 const Sidebar = () => {
   return (
     <div>
-      <LogoContainer>
-        <Link to="/">
+      <Link to="/" style={{ border: "none" }}>
+        <Logo>
           <img src={logo} alt="Dmitriy's Workshop" />
-        </Link>
-      </LogoContainer>
+        </Logo>
+      </Link>
 
       <Socials direction="vertical" />
     </div>

@@ -19,8 +19,17 @@ const ContentWrapper = styled.div`
   flex-wrap: wrap;
   width: 100%;
   max-width: 880px;
-  margin-top: ${rhythm(1)};
-  margin-bottom: ${rhythm(1)};
+  margin: ${rhythm(1)} auto;
+  @media (max-width: ${props => props.theme.bp.mobile}) {
+    max-width: 540px;
+  }
+`
+
+const SidebarBox = styled(Box)`
+  border-right: 2px solid rgba(255, 255, 255, 0.5);
+  @media (max-width: ${props => props.theme.bp.mobile}) {
+    border-right: none;
+  }
 `
 
 class Layout extends Component {
@@ -29,10 +38,12 @@ class Layout extends Component {
     return (
       <PageWrapper>
         <ContentWrapper>
-          <Box width={[1, 1 / 3, 1 / 4]}>
+          <SidebarBox width={[1, 1 / 4]} p={rhythm(1 / 2)}>
             <Sidebar />
+          </SidebarBox>
+          <Box width={[1, 3 / 4]} p={rhythm(1 / 2)}>
+            {children}
           </Box>
-          <Box width={[1, 2 / 3, 3 / 4]}>{children}</Box>
         </ContentWrapper>
       </PageWrapper>
     )
