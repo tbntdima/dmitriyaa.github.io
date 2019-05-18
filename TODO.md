@@ -19,3 +19,5 @@
 - [ ] add footer "Handcrafted with by me 2019"
 
 - [ ] upgrade images with gatsby sharp
+
+- [ ] create sitemap maybe plugin?
