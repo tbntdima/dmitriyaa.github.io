@@ -1,5 +1,10 @@
+const breakpoints = ["768px", "992px", "1200px"]
+const [mobile, tablet, desktop] = breakpoints
+const bp = { mobile, tablet, desktop }
+
 const sharedTheme = {
-  breakpoints: ["768px", "992px", "1200px"],
+  bp,
+  breakpoints,
 }
 
 export const darkTheme = {
