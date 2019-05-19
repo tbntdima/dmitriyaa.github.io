@@ -1,13 +1,13 @@
 import React from "react"
 import { Provider } from "react-redux"
 import { applyMiddleware, createStore } from "redux"
-// import logger from "redux-logger"
+import logger from "redux-logger"
 
 import rootReducer from "./index"
 import { loadState, saveState } from "./localStorage"
 
 const persistedState = loadState()
-const store = createStore(rootReducer, persistedState, applyMiddleware())
+const store = createStore(rootReducer, persistedState, applyMiddleware(logger))
 
 store.subscribe(() => {
   saveState(store.getState())
