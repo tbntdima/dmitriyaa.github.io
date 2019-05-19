@@ -15,7 +15,7 @@ const customizedFairyGatesTheme = {
     },
   ],
   headerWeight: 300,
-  baseFontSize: "18px",
+  // baseFontSize: "18px",
 }
 
 customizedFairyGatesTheme.overrideThemeStyles = () => {
