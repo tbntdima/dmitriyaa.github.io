@@ -10,10 +10,16 @@ const Bio = () => {
       </p>
       <p>
         I love <em>JavaScript</em>, and currently specialized at{" "}
-        <a href="https://reactjs.org/">React</a> library and its ecosystem.
+        <a href="https://reactjs.org/" target="_blank">
+          React
+        </a>{" "}
+        library and its ecosystem.
       </p>
       <p>
-        Currently working <a href="https://www.strv.com/">@STRV</a>
+        Currently working{" "}
+        <a href="https://www.strv.com/" target="_blank">
+          @STRV
+        </a>
       </p>
     </div>
   )
