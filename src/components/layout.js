@@ -2,8 +2,10 @@ import React, { Component } from "react"
 import styled from "styled-components"
 import { Box } from "@rebass/grid"
 
-import Sidebar from "./sidebar"
 import { rhythm } from "../theme/typography"
+import Sidebar from "./sidebar"
+import FixedBackground from "./fixedBackground"
+import SpaceBackground from "./spaceBackground/"
 
 const PageWrapper = styled.div`
   position: relative;
@@ -26,7 +28,7 @@ const ContentWrapper = styled.div`
 `
 
 const SidebarBox = styled(Box)`
-  border-right: 2px solid rgba(255, 255, 255, 0.5);
+  border-right: 2px solid ${props => props.theme.colorLayoutSeparator};
   @media (max-width: ${props => props.theme.bp.mobile}) {
     border-right: none;
   }
@@ -45,6 +47,10 @@ class Layout extends Component {
             {children}
           </Box>
         </ContentWrapper>
+
+        <FixedBackground>
+          <SpaceBackground />
+        </FixedBackground>
       </PageWrapper>
     )
   }
