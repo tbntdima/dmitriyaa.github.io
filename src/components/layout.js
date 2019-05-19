@@ -4,6 +4,7 @@ import { Box } from "@rebass/grid"
 
 import { rhythm } from "../theme/typography"
 import Sidebar from "./sidebar"
+import ThemeToggle from "./ThemeToggle"
 import FixedBackground from "./fixedBackground"
 import SpaceBackground from "./spaceBackground/"
 
@@ -21,9 +22,10 @@ const ContentWrapper = styled.div`
   flex-wrap: wrap;
   width: 100%;
   max-width: 880px;
-  margin: ${rhythm(1)} auto;
+  margin: ${rhythm(3)} auto;
   @media (max-width: ${props => props.theme.bp.mobile}) {
     max-width: 540px;
+    margin: ${rhythm(2)} auto;
   }
 `
 
@@ -32,6 +34,12 @@ const SidebarBox = styled(Box)`
   @media (max-width: ${props => props.theme.bp.mobile}) {
     border-right: none;
   }
+`
+
+const ThemeToggleContainer = styled.div`
+  position: absolute;
+  top: ${rhythm(1)};
+  right: ${rhythm(1)};
 `
 
 class Layout extends Component {
@@ -47,7 +55,10 @@ class Layout extends Component {
             {children}
           </Box>
         </ContentWrapper>
-
+        {/* Absolutely and fixed positioned blocks */}
+        <ThemeToggleContainer>
+          <ThemeToggle />
+        </ThemeToggleContainer>
         <FixedBackground>
           <SpaceBackground />
         </FixedBackground>
