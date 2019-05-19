@@ -1,7 +1,7 @@
 import React, { Component } from "react"
 import { Link, graphql } from "gatsby"
 
-import Bio from "../components/Bio"
+import About from "../components/About"
 import Layout from "../components/Layout"
 import SEO from "../components/Seo"
 import { rhythm, scale } from "../theme/typography"
@@ -35,7 +35,7 @@ class BlogPostTemplate extends Component {
             marginBottom: rhythm(1),
           }}
         />
-        <Bio />
+        <About />
 
         <ul
           style={{
