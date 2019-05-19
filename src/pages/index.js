@@ -1,9 +1,10 @@
 import React from "react"
 import { Box } from "@rebass/grid"
+import { Link } from "gatsby"
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-import Bio from "../components/bio"
+import Layout from "../components/Layout"
+import SEO from "../components/Seo"
+import Bio from "../components/Bio"
 
 const Homepage = ({ toggleDarkMode }) => (
   <Layout>
@@ -15,6 +16,7 @@ const Homepage = ({ toggleDarkMode }) => (
     >
       <Bio />
     </Box>
+    <Link to="/learnings">Learnings</Link>
   </Layout>
 )
 
