@@ -1,6 +1,5 @@
 const Space = {
   init: function(canvas, star_color = "154,164,194") {
-    console.log("init")
     var self = this
     this.config = {
       perspective: 3,
@@ -12,7 +11,6 @@ const Space = {
     this.context = this.canvas.getContext("2d")
     this.start()
     window.onresize = function() {
-      console.log("resize")
       self.start()
     }
   },
