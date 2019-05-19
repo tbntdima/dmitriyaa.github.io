@@ -3,7 +3,7 @@ import styled from "styled-components"
 import { Link } from "gatsby"
 
 import Socials from "./socials"
-import logo from "../images/logo.jpg"
+import logo from "../images/logo.png"
 
 const Logo = styled.div`
   transition: 0.3s;
