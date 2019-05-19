@@ -1,9 +1,10 @@
 import React from "react"
 import styled from "styled-components"
 import { Link } from "gatsby"
+import { Flex } from "@rebass/grid"
 
 import Socials from "./socials"
-import logo from "../images/logo.png"
+import logo from "../../content/assets/logo.png"
 
 const Logo = styled.div`
   transition: 0.3s;
@@ -22,7 +23,9 @@ const Sidebar = () => {
         </Logo>
       </Link>
 
-      <Socials direction="vertical" />
+      <Flex justifyContent="flex-end">
+        <Socials direction="vertical" />
+      </Flex>
     </div>
   )
 }

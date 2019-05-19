@@ -1,7 +1,7 @@
 import React from "react"
 
 const Socials = ({ direction }) => {
-  return <p>socials</p>
+  return <div />
 }
 
 export default Socials
