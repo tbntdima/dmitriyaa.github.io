@@ -6,9 +6,9 @@
 
   - [x] should I keep typography? - yes, its very useful actually
 
-  - [ ] research how to use themes
+  - [x] research how to use themes
 
-  - [ ] introduce redux for theme state control
+  - [x] introduce redux for theme state control
 
 - [ ] style code block from .md to .html
 
