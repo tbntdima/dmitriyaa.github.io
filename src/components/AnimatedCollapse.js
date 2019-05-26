@@ -12,6 +12,15 @@ const AnimatedDiv = styled.div`
   animation-duration: ${props => props.animationDuration}s;
 `
 
+const Heading = styled.h2`
+  margin-top: ${rhythm(1 / 4)};
+  transition: 0.3s;
+  cursor: pointer;
+  &:hover {
+    transform: translateX(${props => (props.active ? 0 : rhythm(1 / 4))});
+  }
+`
+
 const AnimatedCollapse = ({
   title,
   currentHash,
@@ -23,14 +32,14 @@ const AnimatedCollapse = ({
 
   return (
     <div>
-      <h2
-        style={{ marginTop: rhythm(1 / 4), cursor: "pointer" }}
+      <Heading
         onClick={() => {
           navigate(currentHash === newHash ? "/" : `/${newHash}`)
         }}
+        active={currentHash === newHash}
       >
         {title}
-      </h2>
+      </Heading>
       <Collapse
         isOpened={currentHash === newHash}
         style={{ overflow: "hidden" }}

@@ -8,7 +8,6 @@ import AnimatedCollapse from "../components/AnimatedCollapse"
 
 class Homepage extends React.Component {
   render() {
-    console.log(this.props)
     const hash = this.props.location.hash
     return (
       <Layout>
@@ -25,10 +24,10 @@ class Homepage extends React.Component {
           <p>projects</p>
         </AnimatedCollapse>
         <AnimatedCollapse title="Blog" currentHash={hash}>
-          <p>projects</p>
+          <p>blog</p>
         </AnimatedCollapse>
         <AnimatedCollapse title="Contact" currentHash={hash}>
-          <p>projects</p>
+          <p>Contacts</p>
         </AnimatedCollapse>
       </Layout>
     )
