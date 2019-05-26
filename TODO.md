@@ -22,4 +22,4 @@
 
 - [ ] create sitemap maybe plugin?
 
-- [ ] space background control reiniting
+- [x] space background control reiniting

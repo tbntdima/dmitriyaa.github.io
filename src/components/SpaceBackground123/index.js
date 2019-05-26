@@ -12,11 +12,6 @@ class SpaceBackground extends Component {
     Space.init(this.canvas.current, this.props.theme.colorSpaceBackgroundStar)
   }
 
-  componentDidUpdate() {
-    console.log()
-    Space.init(this.canvas.current, this.props.theme.colorSpaceBackgroundStar)
-  }
-
   render() {
     return (
       <canvas
