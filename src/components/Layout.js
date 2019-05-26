@@ -51,7 +51,7 @@ class Layout extends Component {
           <SidebarBox width={[1, 1 / 4]} p={rhythm(1 / 2)}>
             <Sidebar />
           </SidebarBox>
-          <Box width={[1, 3 / 4]} p={rhythm(1 / 2)}>
+          <Box width={[1, 3 / 4]} p={rhythm(0.75)}>
             {children}
           </Box>
         </ContentWrapper>
