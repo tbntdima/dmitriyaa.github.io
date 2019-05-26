@@ -6,7 +6,7 @@ import Layout from "../components/Layout"
 import SEO from "../components/Seo"
 import Bio from "../components/Bio"
 
-const Homepage = ({ toggleDarkMode }) => (
+const Homepage = () => (
   <Layout>
     <SEO title="" />
     <Box
@@ -16,7 +16,6 @@ const Homepage = ({ toggleDarkMode }) => (
     >
       <Bio />
     </Box>
-    <Link to="/learnings">Learnings</Link>
   </Layout>
 )
 
