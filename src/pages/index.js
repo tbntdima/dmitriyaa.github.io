@@ -12,9 +12,9 @@ import { rhythm } from "../theme/typography"
 
 class Homepage extends React.Component {
   render() {
-    const { theme, data } = this.props
+    const { theme, location, data } = this.props
     const posts = data.allMarkdownRemark.edges
-    const hash = this.props.location.hash
+    const hash = location.hash
 
     return (
       <Layout>
