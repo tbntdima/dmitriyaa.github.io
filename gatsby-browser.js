@@ -7,3 +7,10 @@ export const wrapRootElement = ({ element }) => (
     <ConfiguredThemeProvider>{element}</ConfiguredThemeProvider>
   </ConfiguredReduxProvider>
 )
+
+export const shouldUpdateScroll = ({ routerProps: { location } }) => {
+  if (location.hash) {
+    return false
+  }
+  return true
+}
