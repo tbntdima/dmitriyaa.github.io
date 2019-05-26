@@ -21,3 +21,5 @@
 - [ ] upgrade images with gatsby sharp
 
 - [ ] create sitemap maybe plugin?
+
+- [ ] space background control reiniting
