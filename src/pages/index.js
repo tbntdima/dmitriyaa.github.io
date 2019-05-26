@@ -1,22 +1,38 @@
 import React from "react"
 import { Box } from "@rebass/grid"
-import { Link } from "gatsby"
 
 import Layout from "../components/Layout"
 import SEO from "../components/Seo"
 import Bio from "../components/Bio"
+import AnimatedCollapse from "../components/AnimatedCollapse"
 
-const Homepage = () => (
-  <Layout>
-    <SEO title="" />
-    <Box
-      style={{
-        maxWidth: "540px",
-      }}
-    >
-      <Bio />
-    </Box>
-  </Layout>
-)
+class Homepage extends React.Component {
+  render() {
+    console.log(this.props)
+    const hash = this.props.location.hash
+    return (
+      <Layout>
+        <SEO title="" />
+        <Box
+          style={{
+            maxWidth: "540px",
+          }}
+        >
+          <Bio />
+        </Box>
+
+        <AnimatedCollapse title="Projects" currentHash={hash}>
+          <p>projects</p>
+        </AnimatedCollapse>
+        <AnimatedCollapse title="Blog" currentHash={hash}>
+          <p>projects</p>
+        </AnimatedCollapse>
+        <AnimatedCollapse title="Contact" currentHash={hash}>
+          <p>projects</p>
+        </AnimatedCollapse>
+      </Layout>
+    )
+  }
+}
 
 export default Homepage
