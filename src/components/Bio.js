@@ -1,14 +1,15 @@
 import React from "react"
+import { rhythm } from "../theme/typography"
 
 const Bio = () => {
   return (
     <div>
       <h1 style={{ marginTop: 0 }}>I'm Dmitriy An</h1>
-      <p>
+      <p style={{ marginBottom: rhythm(1 / 2) }}>
         Professional self-taught <em>Frontend Developer</em>, who is building
         beautiful, clean and modern websites.
       </p>
-      <p>
+      <p style={{ marginBottom: rhythm(1 / 2) }}>
         I love <em>JavaScript</em>, and currently specialized at{" "}
         <a
           href="https://reactjs.org/"
@@ -19,7 +20,7 @@ const Bio = () => {
         </a>{" "}
         library and its ecosystem.
       </p>
-      <p>
+      <p style={{ marginBottom: rhythm(1 / 2) }}>
         Currently working{" "}
         <a
           href="https://www.strv.com/"
