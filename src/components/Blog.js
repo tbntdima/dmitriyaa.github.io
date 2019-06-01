@@ -2,8 +2,8 @@ import React from "react"
 import { Link } from "gatsby"
 import styled, { withTheme } from "styled-components"
 import chroma from "chroma-js"
-import { rhythm, scale } from "../../theme/typography"
-import { formatReadingTime } from "../../utils/helpers"
+import { rhythm, scale } from "../theme/typography"
+import { formatReadingTime } from "../utils/helpers"
 
 const TitleWrapper = styled.div`
   display: flex;

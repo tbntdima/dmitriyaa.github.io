@@ -1,16 +1,22 @@
 import React from "react"
 import { rhythm } from "../theme/typography"
+import styled from "styled-components"
+
+const CustomEM = styled.em`
+  color: ${props => props.theme.colorMain};
+  /* font-style: normal; */
+`
 
 const Bio = () => {
   return (
     <div>
       <h1 style={{ marginTop: 0 }}>I'm Dmitriy An</h1>
       <p style={{ marginBottom: rhythm(1 / 2) }}>
-        Professional self-taught <em>Frontend Developer</em>, who is building
-        beautiful, clean and modern websites.
+        Professional self-taught <CustomEM>Frontend Developer</CustomEM>, who is
+        building beautiful, clean and modern websites.
       </p>
       <p style={{ marginBottom: rhythm(1 / 2) }}>
-        I love <em>JavaScript</em>, and currently specialized at{" "}
+        I love <CustomEM>JavaScript</CustomEM>, and currently specialized at{" "}
         <a
           href="https://reactjs.org/"
           target="_blank"
@@ -18,7 +24,7 @@ const Bio = () => {
         >
           React
         </a>{" "}
-        library and its ecosystem.
+        library and its huge ecosystem.
       </p>
       <p style={{ marginBottom: rhythm(1 / 2) }}>
         Currently working{" "}

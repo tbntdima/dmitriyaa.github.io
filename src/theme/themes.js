@@ -1,5 +1,4 @@
 import chroma from "chroma-js"
-import { red } from "ansi-colors"
 
 const breakpoints = ["768px", "992px", "1200px"]
 const [mobile, tablet, desktop] = breakpoints

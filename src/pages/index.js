@@ -7,7 +7,7 @@ import Layout from "../components/Layout"
 import SEO from "../components/Seo"
 import Bio from "../components/Bio"
 import AnimatedCollapse from "../components/AnimatedCollapse"
-import Blog from "../components/Blog/"
+import Blog from "../components/Blog"
 import { rhythm } from "../theme/typography"
 
 class Homepage extends React.Component {
