@@ -6,7 +6,7 @@ const Space = {
     this.config = {
       perspective: 3,
       star_color,
-      speed: 0.2,
+      speed: 0.1,
       stars_count: 3,
     }
     this.canvas = canvas

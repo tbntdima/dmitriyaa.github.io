@@ -7,11 +7,9 @@ import Socials from "./Socials"
 import logo from "../../content/assets/logo.png"
 
 const Logo = styled.div`
+  max-width: 200px;
+  margin: 0 auto;
   transition: 0.3s;
-  @media (max-width: ${props => props.theme.bp.mobile}) {
-    margin: 0 auto;
-    max-width: 200px;
-  }
 `
 
 const Sidebar = () => {
@@ -19,7 +17,7 @@ const Sidebar = () => {
     <div>
       <Link to="/" style={{ border: "none" }}>
         <Logo>
-          <img src={logo} alt="Dmitriy's Workshop" />
+          <img src={logo} alt="Dmitriy An" style={{ marginBottom: 0 }} />
         </Logo>
       </Link>
 

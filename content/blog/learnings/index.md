@@ -4,6 +4,10 @@ date: "2019-05-14"
 description: What I've learnet building this blog
 ---
 
+```js
+console.log("hello world")
+```
+
 - [Typography.js](https://kyleamathews.github.io/typography.js/)
 
   Here is pretty good high level explanation of the concenpts: [http://kyleamathews.github.io/typography.js/what/](http://kyleamathews.github.io/typography.js/what/)

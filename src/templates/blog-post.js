@@ -1,42 +1,58 @@
 import React, { Component } from "react"
+import styled from "styled-components"
+import chroma from "chroma-js"
 import { Link, graphql } from "gatsby"
 
 import About from "../components/About"
 import Layout from "../components/Layout"
 import SEO from "../components/Seo"
 import { rhythm, scale } from "../theme/typography"
+import { formatReadingTime } from "../utils/helpers"
+
+const HorizontalLine = styled.hr`
+  margin: ${rhythm(1 / 4)} 0;
+  border-bottom: 1.5px solid
+    ${props =>
+      chroma(props.theme.colorAccent)
+        .darken()
+        .alpha(0.5)};
+`
+
+const Title = styled.h1`
+  ${scale(1.1)};
+  margin: 0;
+`
+const AdditionalInfo = styled.p`
+  ${scale(-1 / 3)};
+  display: block;
+  margin-bottom: ${rhythm(1)};
+  color: ${props => props.theme.colorAccent};
+  opacity: 0.85;
+`
 
 class BlogPostTemplate extends Component {
   render() {
     const post = this.props.data.markdownRemark
-    // const siteTitle = this.props.data.site.siteMetadata.title
     const { previous, next } = this.props.pageContext
 
     return (
-      <Layout>
+      <Layout isSingleCol>
         <SEO
           title={post.frontmatter.title}
           description={post.frontmatter.description || post.excerpt}
         />
-        <h1>{post.frontmatter.title}</h1>
-        <p
-          style={{
-            ...scale(-1 / 5),
-            display: `block`,
-            marginBottom: rhythm(1),
-            marginTop: rhythm(-1),
-          }}
-        >
+        <Title>{post.frontmatter.title}</Title>
+        <HorizontalLine />
+        <AdditionalInfo>
           {post.frontmatter.date}
-        </p>
-        <div dangerouslySetInnerHTML={{ __html: post.html }} />
-        <hr
-          style={{
-            marginBottom: rhythm(1),
-          }}
+          {` • ${formatReadingTime(post.timeToRead)}`}
+        </AdditionalInfo>
+        <div
+          style={{ marginBottom: rhythm(3) }}
+          dangerouslySetInnerHTML={{ __html: post.html }}
         />
-        <About />
-
+        <HorizontalLine style={{ marginBottom: rhythm(1.5) }} />
+        <About style={{ marginBottom: rhythm(1) }} />
         <ul
           style={{
             display: `flex`,
@@ -44,6 +60,7 @@ class BlogPostTemplate extends Component {
             justifyContent: `space-between`,
             listStyle: `none`,
             padding: 0,
+            marginLeft: 0,
           }}
         >
           <li>
@@ -80,6 +97,7 @@ export const pageQuery = graphql`
       id
       excerpt(pruneLength: 160)
       html
+      timeToRead
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")

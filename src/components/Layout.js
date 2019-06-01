@@ -1,4 +1,4 @@
-import React, { Component } from "react"
+import React from "react"
 import styled from "styled-components"
 import { Box } from "@rebass/grid"
 
@@ -21,7 +21,7 @@ const ContentWrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  max-width: 880px;
+  max-width: ${props => (props.isSingleCol ? "700px" : "880px")};
   margin: ${rhythm(3)} auto;
   @media (max-width: ${props => props.theme.bp.mobile}) {
     max-width: 540px;
@@ -31,6 +31,7 @@ const ContentWrapper = styled.div`
 
 const SidebarBox = styled(Box)`
   border-right: 2px solid ${props => props.theme.colorLayoutSeparator};
+  ${props => (props.isSingleCol ? "border-right: none" : "")};
   @media (max-width: ${props => props.theme.bp.mobile}) {
     border-right: none;
   }
@@ -42,29 +43,30 @@ const ThemeToggleContainer = styled.div`
   right: ${rhythm(1)};
 `
 
-class Layout extends Component {
-  render() {
-    const { children } = this.props
-    return (
-      <PageWrapper>
-        <ContentWrapper>
-          <SidebarBox width={[1, 22 / 100]} p={rhythm(1 / 2)}>
-            <Sidebar />
-          </SidebarBox>
-          <Box width={[1, 78 / 100]} p={rhythm(0.75)}>
-            {children}
-          </Box>
-        </ContentWrapper>
-        {/* Absolutely and fixed positioned blocks */}
-        <ThemeToggleContainer>
-          <ThemeToggle />
-        </ThemeToggleContainer>
-        <FixedBackground>
-          <SpaceBackground />
-        </FixedBackground>
-      </PageWrapper>
-    )
-  }
+const Layout = ({ isSingleCol = false, children }) => {
+  return (
+    <PageWrapper>
+      <ContentWrapper isSingleCol={isSingleCol}>
+        <SidebarBox
+          isSingleCol={isSingleCol}
+          width={isSingleCol ? [1] : [1, 22 / 100]}
+          p={rhythm(1 / 2)}
+        >
+          <Sidebar />
+        </SidebarBox>
+        <Box width={isSingleCol ? [1] : [1, 78 / 100]} p={rhythm(0.75)}>
+          {children}
+        </Box>
+      </ContentWrapper>
+      {/* Absolutely and fixed positioned blocks */}
+      <ThemeToggleContainer>
+        <ThemeToggle />
+      </ThemeToggleContainer>
+      <FixedBackground>
+        <SpaceBackground />
+      </FixedBackground>
+    </PageWrapper>
+  )
 }
 
 export default Layout

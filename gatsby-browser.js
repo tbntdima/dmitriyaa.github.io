@@ -9,7 +9,7 @@ export const wrapRootElement = ({ element }) => (
 )
 
 export const shouldUpdateScroll = ({ routerProps: { location } }) => {
-  if (location.hash) {
+  if (location.hash || location.pathname === "/") {
     return false
   }
   return true
