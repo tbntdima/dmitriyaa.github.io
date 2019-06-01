@@ -1,10 +1,12 @@
+import chroma from "chroma-js"
+
 const Space = {
-  init: function(canvas, star_color = "154,164,194") {
+  init: function(canvas, star_color = "#9aa4c2") {
     var self = this
     this.config = {
       perspective: 3,
-      star_color: star_color,
-      speed: 0.5,
+      star_color,
+      speed: 0.2,
       stars_count: 3,
     }
     this.canvas = canvas
@@ -99,8 +101,9 @@ const Space = {
         )
         this.context.restore()
       } else {
-        this.context.fillStyle =
-          "rgba(" + this.config.star_color + "," + star_opacity + ")"
+        this.context.fillStyle = chroma(this.config.star_color).alpha(
+          star_opacity
+        )
         this.context.beginPath()
         this.context.arc(star_x, star_y, star_radius, 0, Math.PI * 2)
         this.context.fill()

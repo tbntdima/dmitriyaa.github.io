@@ -8,7 +8,7 @@ import ThemeToggle from "./ThemeToggle"
 import FixedBackground from "./FixedBackground"
 import SpaceBackground from "./SpaceBackground"
 
-const PageWrapper = styled.div`
+const PageWrapper = styled.main`
   position: relative;
   display: flex;
   align-items: center;
@@ -48,10 +48,10 @@ class Layout extends Component {
     return (
       <PageWrapper>
         <ContentWrapper>
-          <SidebarBox width={[1, 1 / 4]} p={rhythm(1 / 2)}>
+          <SidebarBox width={[1, 22 / 100]} p={rhythm(1 / 2)}>
             <Sidebar />
           </SidebarBox>
-          <Box width={[1, 3 / 4]} p={rhythm(0.75)}>
+          <Box width={[1, 78 / 100]} p={rhythm(0.75)}>
             {children}
           </Box>
         </ContentWrapper>

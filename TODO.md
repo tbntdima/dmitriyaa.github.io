@@ -23,3 +23,5 @@
 - [ ] create sitemap maybe plugin?
 
 - [x] space background control reiniting
+
+- [ ] space background reinit on theme change

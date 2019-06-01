@@ -1,18 +1,18 @@
 import React from "react"
 import { Box } from "@rebass/grid"
 import { withTheme } from "styled-components"
-import { Link, graphql } from "gatsby"
+import { graphql } from "gatsby"
 
-import { formatReadingTime } from "../utils/helpers"
 import Layout from "../components/Layout"
 import SEO from "../components/Seo"
 import Bio from "../components/Bio"
 import AnimatedCollapse from "../components/AnimatedCollapse"
+import Blog from "../components/Blog/"
 import { rhythm } from "../theme/typography"
 
 class Homepage extends React.Component {
   render() {
-    const { theme, location, data } = this.props
+    const { location, data } = this.props
     const posts = data.allMarkdownRemark.edges
     const hash = location.hash
 
@@ -33,38 +33,7 @@ class Homepage extends React.Component {
         </AnimatedCollapse>
 
         <AnimatedCollapse title="Blog" currentHash={hash}>
-          <div>
-            {posts.map(({ node }) => {
-              const title = node.frontmatter.title || node.fields.slug
-              return (
-                <article key={node.fields.slug}>
-                  <Link to={node.fields.slug}>
-                    <h3
-                      style={{
-                        marginTop: rhythm(1 / 2),
-                        marginBottom: 0,
-                        paddingBottom: rhythm(1 / 4),
-                      }}
-                    >
-                      {title}
-                    </h3>
-                  </Link>
-                  <small style={{ color: theme.colorAccent }}>
-                    {node.frontmatter.date}
-                    {` • ${formatReadingTime(node.timeToRead)}`}
-                  </small>
-                  <p
-                    style={{
-                      marginTop: rhythm(1 / 4),
-                    }}
-                    dangerouslySetInnerHTML={{
-                      __html: node.frontmatter.description || node.excerpt,
-                    }}
-                  />
-                </article>
-              )
-            })}
-          </div>
+          <Blog posts={posts} />
         </AnimatedCollapse>
 
         <AnimatedCollapse title="Contact" currentHash={hash}>

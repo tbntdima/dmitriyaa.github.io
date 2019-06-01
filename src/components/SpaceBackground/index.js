@@ -9,7 +9,19 @@ class SpaceBackground extends Component {
   }
 
   componentDidMount() {
-    Space.init(this.canvas.current, this.props.theme.colorSpaceBackgroundStar)
+    Space.init(this.canvas.current, this.props.theme.colorSpaceBackgroundStars)
+  }
+
+  componentDidUpdate(prevProps) {
+    if (
+      this.props.theme.colorSpaceBackgroundStars !==
+      prevProps.theme.colorSpaceBackgroundStars
+    ) {
+      Space.init(
+        this.canvas.current,
+        this.props.theme.colorSpaceBackgroundStars
+      )
+    }
   }
 
   render() {

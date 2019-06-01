@@ -1,3 +1,5 @@
+import chroma from "chroma-js"
+
 const breakpoints = ["768px", "992px", "1200px"]
 const [mobile, tablet, desktop] = breakpoints
 const bp = { mobile, tablet, desktop }
@@ -7,22 +9,34 @@ const sharedTheme = {
   breakpoints,
 }
 
+export const darkThemeColors = {
+  colorMain: "#47f4cf",
+  colorAccent: "#3CD1B1",
+  colorText: chroma("#fff").alpha(0.84),
+  colorTextOnDark: chroma("#fff").alpha(0.84),
+  colorBackground: "#14161e",
+  colorSpaceBackgroundStars: chroma("#47f4cf").brighten(2),
+  colorLayoutSeparator: chroma("#47f4cf").alpha(0.5),
+}
+
 export const darkTheme = {
   ...sharedTheme,
-  colorMain: "#47f4cf",
-  colorAccent: "#f2cd5e",
-  colorText: "rgba(255,255,255,.84)",
-  colorBackground: "#14161e",
-  colorSpaceBackgroundStar: "154,164,194", // has to be rgb
-  colorLayoutSeparator: "rgba(255, 255, 255, 0.5)",
+  ...darkThemeColors,
+}
+
+const lightThemeColors = {
+  colorMain: chroma("#47f4cf").darken(2.5),
+  colorAccent: chroma("#3CD1B1").darken(2.5),
+  colorText: chroma("#000").alpha(0.84),
+  colorTextOnDark: chroma("#000").alpha(0.84),
+  colorBackground: chroma("#FFF8DC").brighten(0.5),
+  colorSpaceBackgroundStars: chroma("#47f4cf").darken(2.5),
+  colorLayoutSeparator: chroma("#47f4cf")
+    .darken(2.5)
+    .alpha(0.5),
 }
 
 export const lightTheme = {
   ...sharedTheme,
-  colorMain: "#b80b30",
-  colorAccent: "#0d32a1",
-  colorText: "rgba(0,0,0,.84)",
-  colorBackground: "#ebe9e1",
-  colorSpaceBackgroundStar: "101, 91, 61", // has to be rgb
-  colorLayoutSeparator: "rgba(0, 0, 0, 0.65)",
+  ...lightThemeColors,
 }
