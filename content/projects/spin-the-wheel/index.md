@@ -1,6 +1,6 @@
 ---
 title: Spin the Wheel
-date: "2019-06-01"
+date: "2019-06-02"
 tags: ["react"]
 description: An interactive game-like landing page built on reactjs.
 githubUrl: https://github.com/dmitriyaa/react-spin-the-wheel/

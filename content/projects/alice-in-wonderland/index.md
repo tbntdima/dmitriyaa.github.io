@@ -1,6 +1,6 @@
 ---
 title: Alice in Wonderland
-date: "2019-06-02"
+date: "2019-06-01"
 tags: ["react"]
 description: An interactive game-like landing page built on reactjs.
 githubUrl: https://github.com/dmitriyaa/react-alice-in-wonderland
