@@ -25,3 +25,5 @@
 - [x] space background control reiniting
 
 - [ ] space background reinit on theme change
+
+- [ ] blog post / project post back button to return to hash

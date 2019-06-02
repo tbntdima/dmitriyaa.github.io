@@ -35,8 +35,16 @@ const AnimatedCollapse = ({
       <Heading
         onClick={() => {
           navigate(currentHash === newHash ? "/" : `/${newHash}`)
+          if (currentHash !== newHash) {
+            setTimeout(() => {
+              document.getElementById(id).scrollIntoView({
+                behavior: "smooth",
+              })
+            }, animationDuration * 100)
+          }
         }}
         active={currentHash === newHash}
+        id={id}
       >
         {title}
       </Heading>
@@ -48,7 +56,7 @@ const AnimatedCollapse = ({
           isActive={currentHash === newHash}
           animationDuration={animationDuration}
         >
-          <div id={id}>{children}</div>
+          <div>{children}</div>
         </AnimatedDiv>
       </Collapse>
     </div>
