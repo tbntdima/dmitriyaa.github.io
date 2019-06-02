@@ -41,19 +41,30 @@ class BlogPostTemplate extends Component {
           title={post.frontmatter.title}
           description={post.frontmatter.description || post.excerpt}
         />
+
         <Link to="/">← home</Link>
+
         <Title>{post.frontmatter.title}</Title>
+
         <HorizontalLine />
+
         <AdditionalInfo>
           {post.frontmatter.date}
           {` • ${formatReadingTime(post.timeToRead)}`}
         </AdditionalInfo>
+
         <div
           style={{ marginBottom: rhythm(3) }}
           dangerouslySetInnerHTML={{ __html: post.html }}
         />
+
         <HorizontalLine style={{ marginBottom: rhythm(1.5) }} />
-        <About style={{ marginBottom: rhythm(1) }} />
+
+        <About
+          twitterUsername={this.props.data.site.siteMetadata.social.twitter}
+          style={{ marginBottom: rhythm(1) }}
+        />
+
         <ul
           style={{
             display: `flex`,
@@ -92,6 +103,9 @@ export const pageQuery = graphql`
       siteMetadata {
         title
         author
+        social {
+          twitter
+        }
       }
     }
     markdownRemark(fields: { slug: { eq: $slug } }) {

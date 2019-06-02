@@ -5,7 +5,7 @@ import { Link } from "gatsby"
 import logo from "../../content/assets/avatar.jpg"
 import { rhythm } from "../theme/typography"
 
-const About = ({ style }) => {
+const About = ({ twitterUsername, style }) => {
   return (
     <Flex style={style}>
       <Box>
@@ -26,7 +26,7 @@ const About = ({ style }) => {
         </Link>
         <p style={{ margin: 0 }}>
           Personal website and blog by{" "}
-          <a href="https://twitter.com/just_dmitriy_an">Dmitriy An</a>
+          <a href={`https://twitter.com/${twitterUsername}`}>Dmitriy An</a>
         </p>
       </Box>
     </Flex>
