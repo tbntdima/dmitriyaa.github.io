@@ -22,7 +22,7 @@ const ContentWrapper = styled.div`
   flex-wrap: wrap;
   width: 100%;
   max-width: ${props => (props.isSingleCol ? "700px" : "880px")};
-  margin: ${rhythm(3)} auto;
+  margin: ${rhythm(2)} auto;
   @media (max-width: ${props => props.theme.bp.mobile}) {
     max-width: 540px;
     margin: ${rhythm(2)} auto;

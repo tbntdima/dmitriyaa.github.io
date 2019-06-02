@@ -49,22 +49,27 @@ const Blog = ({ posts, theme }) => {
   return (
     <div style={{ paddingTop: rhythm(1 / 2) }}>
       {posts.map(({ node }) => {
-        const title = node.frontmatter.title || node.fields.slug
+        const post = node
+        const title = post.frontmatter.title || post.fields.slug
         return (
-          <article key={node.fields.slug}>
-            <Link to={node.fields.slug}>
+          <article key={post.fields.slug}>
+            <Link to={post.fields.slug}>
               <TitleWrapper>
-                <Tag style={{ marginRight: rhythm(1 / 2) }}>regular</Tag>
+                {post.frontmatter.tags.map(tag => (
+                  <Tag key={tag} style={{ marginRight: rhythm(1 / 2) }}>
+                    {tag}
+                  </Tag>
+                ))}
                 <Title>{title}</Title>
               </TitleWrapper>
             </Link>
             <Subtitle>
-              {node.frontmatter.date}
-              {` • ${formatReadingTime(node.timeToRead)}`}
+              {post.frontmatter.date}
+              {` • ${formatReadingTime(post.timeToRead)}`}
             </Subtitle>
             <Description
               dangerouslySetInnerHTML={{
-                __html: node.frontmatter.description || node.excerpt,
+                __html: post.frontmatter.description || post.excerpt,
               }}
             />
           </article>

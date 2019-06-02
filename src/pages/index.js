@@ -8,12 +8,15 @@ import SEO from "../components/Seo"
 import Bio from "../components/Bio"
 import AnimatedCollapse from "../components/AnimatedCollapse"
 import Blog from "../components/Blog"
+import Projects from "../components/Projects"
 import { rhythm } from "../theme/typography"
 
 class Homepage extends React.Component {
   render() {
     const { location, data } = this.props
-    const posts = data.allMarkdownRemark.edges
+    const { blogData, projectsData } = data
+    const projectsPosts = projectsData.edges
+    const blogPosts = blogData.edges
     const hash = location.hash
 
     return (
@@ -29,11 +32,11 @@ class Homepage extends React.Component {
         </Box>
 
         <AnimatedCollapse title="Projects" currentHash={hash}>
-          <p>projects</p>
+          <Projects posts={projectsPosts} />
         </AnimatedCollapse>
 
         <AnimatedCollapse title="Blog" currentHash={hash}>
-          <Blog posts={posts} />
+          <Blog posts={blogPosts} />
         </AnimatedCollapse>
 
         <AnimatedCollapse title="Contact" currentHash={hash}>
@@ -48,7 +51,10 @@ export default withTheme(Homepage)
 
 export const pageQuery = graphql`
   query {
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+    blogData: allMarkdownRemark(
+      filter: { fileAbsolutePath: { regex: "/blog/" } }
+      sort: { fields: [frontmatter___date], order: DESC }
+    ) {
       edges {
         node {
           excerpt
@@ -59,7 +65,38 @@ export const pageQuery = graphql`
           frontmatter {
             date(formatString: "MMMM DD, YYYY")
             title
+            tags
             description
+          }
+        }
+      }
+    }
+    projectsData: allMarkdownRemark(
+      filter: { fileAbsolutePath: { regex: "/projects/" } }
+      sort: { fields: [frontmatter___date], order: DESC }
+    ) {
+      edges {
+        node {
+          excerpt
+          fields {
+            slug
+          }
+          timeToRead
+          frontmatter {
+            date(formatString: "MMMM DD, YYYY")
+            title
+            tags
+            description
+            githubUrl
+            liveUrl
+            desktopImage {
+              name
+              publicURL
+            }
+            mobileImage {
+              name
+              publicURL
+            }
           }
         }
       }

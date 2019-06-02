@@ -41,6 +41,7 @@ class BlogPostTemplate extends Component {
           title={post.frontmatter.title}
           description={post.frontmatter.description || post.excerpt}
         />
+        <Link to="/">← home</Link>
         <Title>{post.frontmatter.title}</Title>
         <HorizontalLine />
         <AdditionalInfo>

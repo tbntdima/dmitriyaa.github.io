@@ -1,6 +1,7 @@
 ---
 title: On road learnings
 date: "2019-05-14"
+tags: ["regular"]
 description: What I've learnet building this blog
 ---
 

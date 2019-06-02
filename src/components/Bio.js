@@ -4,7 +4,7 @@ import styled from "styled-components"
 
 const CustomEM = styled.em`
   color: ${props => props.theme.colorMain};
-  /* font-style: normal; */
+  font-style: normal;
 `
 
 const Bio = () => {
