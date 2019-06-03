@@ -27,7 +27,7 @@ const Bio = () => {
         library and its huge ecosystem.
       </p>
       <p style={{ marginBottom: rhythm(1 / 2) }}>
-        Currently working{" "}
+        Working on{" "}
         <a
           href="https://www.strv.com/"
           target="_blank"

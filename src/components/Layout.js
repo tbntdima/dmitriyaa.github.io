@@ -21,7 +21,7 @@ const ContentWrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  max-width: ${props => (props.isSingleCol ? "700px" : "880px")};
+  max-width: ${props => (props.isSingleColLayout ? "700px" : "880px")};
   margin: ${rhythm(2)} auto;
   @media (max-width: ${props => props.theme.bp.mobile}) {
     max-width: 540px;
@@ -31,7 +31,7 @@ const ContentWrapper = styled.div`
 
 const SidebarBox = styled(Box)`
   border-right: 2px solid ${props => props.theme.colorLayoutSeparator};
-  ${props => (props.isSingleCol ? "border-right: none" : "")};
+  ${props => (props.isSingleColLayout ? "border-right: none" : "")};
   @media (max-width: ${props => props.theme.bp.mobile}) {
     border-right: none;
   }
@@ -43,18 +43,18 @@ const ThemeToggleContainer = styled.div`
   right: ${rhythm(1)};
 `
 
-const Layout = ({ isSingleCol = false, children }) => {
+const Layout = ({ isSingleColLayout = false, children }) => {
   return (
     <PageWrapper>
-      <ContentWrapper isSingleCol={isSingleCol}>
+      <ContentWrapper isSingleColLayout={isSingleColLayout}>
         <SidebarBox
-          isSingleCol={isSingleCol}
-          width={isSingleCol ? [1] : [1, 22 / 100]}
+          isSingleColLayout={isSingleColLayout}
+          width={isSingleColLayout ? [1] : [1, 22 / 100]}
           p={rhythm(1 / 2)}
         >
-          <Sidebar />
+          <Sidebar isSingleColLayout={isSingleColLayout} />
         </SidebarBox>
-        <Box width={isSingleCol ? [1] : [1, 78 / 100]} p={rhythm(0.75)}>
+        <Box width={isSingleColLayout ? [1] : [1, 78 / 100]} p={rhythm(0.75)}>
           {children}
         </Box>
       </ContentWrapper>

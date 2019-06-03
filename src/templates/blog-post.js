@@ -36,7 +36,7 @@ class BlogPostTemplate extends Component {
     const { previous, next } = this.props.pageContext
 
     return (
-      <Layout isSingleCol>
+      <Layout isSingleColLayout>
         <SEO
           title={post.frontmatter.title}
           description={post.frontmatter.description || post.excerpt}

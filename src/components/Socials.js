@@ -1,8 +1,62 @@
 import React from "react"
 import { StaticQuery, graphql } from "gatsby"
+import styled from "styled-components"
+import { Flex } from "@rebass/grid"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import {
+  faTwitterSquare,
+  faGithubAlt,
+  faInstagram,
+  faLinkedin,
+} from "@fortawesome/free-brands-svg-icons"
+import { scale } from "../theme/typography"
+
+const SocialLink = styled.a`
+  display: inline-flex;
+  padding: 0.25rem;
+  border-bottom: none;
+  ${scale(0.8)};
+  line-height: 1;
+  transition: 0.5s;
+  &:hover {
+    transform: rotate(1turn);
+  }
+  @media (max-width: ${props => props.theme.bp.mobile}) {
+    ${scale(0.9)};
+  }
+`
+
+const SocialBlock = ({ faIcon, url }) => (
+  <SocialLink href={url} target="_blank">
+    <FontAwesomeIcon icon={faIcon} />
+  </SocialLink>
+)
 
 const Socials = ({ direction, data }) => {
-  return <div>{data.site.siteMetadata.social.twitter}</div>
+  const socials = data.site.siteMetadata.social
+
+  return (
+    <Flex
+      flexDirection={direction === "vertical" ? ["row", "column"] : ["row"]}
+    >
+      <SocialBlock
+        faIcon={faGithubAlt}
+        url={`https://github.com/${socials.github}`}
+      />
+      <SocialBlock
+        faIcon={faTwitterSquare}
+        url={`https://twitter.com/${socials.twitter}`}
+      />
+      <SocialBlock
+        faIcon={faLinkedin}
+        url={`https://www.linkedin.com/in/${socials.linkedin}`}
+      />
+      <SocialBlock
+        faIcon={faInstagram}
+        url={`https://www.instagram.com/${socials.instagram}`}
+      />
+    </Flex>
+  )
 }
 
 export default props => (
@@ -13,6 +67,9 @@ export default props => (
           siteMetadata {
             social {
               twitter
+              github
+              instagram
+              linkedin
             }
           }
         }

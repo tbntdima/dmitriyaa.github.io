@@ -12,7 +12,7 @@ const Logo = styled.div`
   transition: 0.3s;
 `
 
-const Sidebar = () => {
+const Sidebar = ({ isSingleColLayout }) => {
   return (
     <div>
       <Link to="/" style={{ border: "none" }}>
@@ -21,8 +21,10 @@ const Sidebar = () => {
         </Logo>
       </Link>
 
-      <Flex justifyContent="flex-end">
-        <Socials direction="vertical" />
+      <Flex
+        justifyContent={isSingleColLayout ? ["center"] : ["center", "flex-end"]}
+      >
+        <Socials direction={isSingleColLayout ? "horizontal" : "vertical"} />
       </Flex>
     </div>
   )
