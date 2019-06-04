@@ -36,7 +36,7 @@ self.__precacheManifest = [
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "2afef1f51458b57eb8bc453cc8ac8c8f"
+    "revision": "cbf699a6cd1eab6dac53a899cc20fde5"
   },
   {
     "url": "styles.869419c6cabe2e392b4e.css"
@@ -55,9 +55,6 @@ self.__precacheManifest = [
   },
   {
     "url": "static/d/749/path---404-html-516-62a-CQY77jWaOpwA8WqRqQPDs67mA.json"
-  },
-  {
-    "url": "static/d/604/path---offline-plugin-app-shell-fallback-a-30-c5a-BawJvyh36KKFwbrWPg4a4aYuc8.json"
   },
   {
     "url": "manifest.webmanifest",
