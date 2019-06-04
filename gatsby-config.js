@@ -93,5 +93,21 @@ module.exports = {
         pathToConfigModule: `src/theme/typography`,
       },
     },
+    {
+      resolve: `gatsby-plugin-sitemap`,
+      options: {
+        serialize: ({ site, allSitePage }) =>
+          allSitePage.edges.map(edge => {
+            // if homepage, set priority 1
+            const priority = edge.node.path !== "/" ? 0.7 : 1
+
+            return {
+              url: site.siteMetadata.siteUrl + edge.node.path,
+              changefreq: `daily`,
+              priority,
+            }
+          }),
+      },
+    },
   ],
 }
