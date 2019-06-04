@@ -86,7 +86,8 @@ module.exports = {
         display: `standalone`,
       },
     },
-    `gatsby-plugin-offline`,
+    // `gatsby-plugin-offline`,
+    "gatsby-plugin-remove-serviceworker",
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-plugin-typography`,
