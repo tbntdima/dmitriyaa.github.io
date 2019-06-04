@@ -4,7 +4,6 @@ import React from "react"
 import { withTheme } from "styled-components"
 
 const Toggle = ({ theme, icons, checked, onChange, ...inputProps }) => {
-  console.log(checked)
   return (
     <div
       className={`react-toggle ${

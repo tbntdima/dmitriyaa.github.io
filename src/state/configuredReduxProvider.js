@@ -4,14 +4,8 @@ import { applyMiddleware, createStore } from "redux"
 import logger from "redux-logger"
 
 import rootReducer from "./index"
-import { loadState, saveState } from "./localStorage"
 
-const persistedState = loadState()
-const store = createStore(rootReducer, persistedState, applyMiddleware(logger))
-
-store.subscribe(() => {
-  saveState(store.getState())
-})
+const store = createStore(rootReducer, applyMiddleware(logger))
 
 const ConfiguredReduxProvider = ({ children }) => (
   <Provider store={store}>{children}</Provider>

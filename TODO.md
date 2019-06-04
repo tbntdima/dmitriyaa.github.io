@@ -12,4 +12,4 @@
 
 - [ ] separate blog template from projects template
 
-- [ ] homepage -> projects -> images order
+- [ ] persist theme. Right now not possible. Probably because of hydration.

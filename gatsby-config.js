@@ -72,7 +72,7 @@ module.exports = {
         trackingId: `UA-96913357-3`,
       },
     },
-    `gatsby-plugin-feed`,
+    // `gatsby-plugin-feed`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -86,8 +86,8 @@ module.exports = {
         display: `standalone`,
       },
     },
-    // `gatsby-plugin-offline`,
-    "gatsby-plugin-remove-serviceworker",
+    `gatsby-plugin-offline`,
+    // "gatsby-plugin-remove-serviceworker",
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-plugin-typography`,
