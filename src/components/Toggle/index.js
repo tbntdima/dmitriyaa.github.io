@@ -7,9 +7,7 @@ const Toggle = ({ theme, icons, checked, onChange, ...inputProps }) => {
   return (
     <div
       className={`react-toggle ${
-        checked
-          ? `react-toggle--checked ${checked}`
-          : `react-toggle--disabled ${checked}`
+        checked ? `react-toggle--checked` : `react-toggle--disabled`
       }`}
       onClick={onChange}
     >
