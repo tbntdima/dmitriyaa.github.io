@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Dmitriy An]]></title><description><![CDATA[Personal website and blog by Dmitriy An.]]></description><link>https://dmitriyaa.github.io/</link><generator>RSS for Node</generator><lastBuildDate>Tue, 04 Jun 2019 08:54:12 GMT</lastBuildDate><item><title><![CDATA[Spin the Wheel]]></title><link>https://dmitriyaa.github.io//spin-the-wheel/</link><guid isPermaLink="false">https://dmitriyaa.github.io//spin-the-wheel/</guid><pubDate>Sun, 02 Jun 2019 00:00:00 GMT</pubDate><content:encoded></content:encoded></item><item><title><![CDATA[Alice in Wonderland]]></title><link>https://dmitriyaa.github.io//alice-in-wonderland/</link><guid isPermaLink="false">https://dmitriyaa.github.io//alice-in-wonderland/</guid><pubDate>Sat, 01 Jun 2019 00:00:00 GMT</pubDate><content:encoded></content:encoded></item><item><title><![CDATA[On road learnings]]></title><description><![CDATA[Typography.jsHere is pretty good high level explanation of the concenpts: http://kyleamathews.github.io/typography.js/what/Quick summary…]]></description><link>https://dmitriyaa.github.io//learnings/</link><guid isPermaLink="false">https://dmitriyaa.github.io//learnings/</guid><pubDate>Tue, 14 May 2019 00:00:00 GMT</pubDate><content:encoded>&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;hello world&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://kyleamathews.github.io/typography.js/&quot;&gt;Typography.js&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Here is pretty good high level explanation of the concenpts: &lt;a href=&quot;http://kyleamathews.github.io/typography.js/what/&quot;&gt;http://kyleamathews.github.io/typography.js/what/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Quick summary:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;scale identifies the relationship between elements, for example is p is 16px, and ration is 2, then h1 is 32&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;one rhythm is equal to one line-height&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;vertical rhythm - margin bottom 1 rhythm on all elements&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://medium.freecodecamp.org/how-to-get-started-with-gatsby-2-and-redux-ae1c543571ca&quot;&gt;Redux in Gatsby&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://9elements.com/css-rule-order/&quot;&gt;Organize CSS properties&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/rebassjs/grid&quot;&gt;Layout Helper Lib - Grid&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[My first post]]></title><description><![CDATA[Hello world how are you?]]></description><link>https://dmitriyaa.github.io//my-first-post/</link><guid isPermaLink="false">https://dmitriyaa.github.io//my-first-post/</guid><pubDate>Mon, 13 May 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Hello world how are you?&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token function&quot;&gt;yarn&lt;/span&gt;
+
+&lt;span class=&quot;token function&quot;&gt;yarn&lt;/span&gt; deploy&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;Button&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; color&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; children &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;
+    &lt;span class=&quot;token comment&quot;&gt;// ✅ `color` is always fresh!&lt;/span&gt;
+    &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;button className&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;Button-&quot;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; color&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;children&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;button&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[Flip a Coin]]></title><link>https://dmitriyaa.github.io//flip-a-coin/</link><guid isPermaLink="false">https://dmitriyaa.github.io//flip-a-coin/</guid><pubDate>Mon, 13 May 2019 00:00:00 GMT</pubDate><content:encoded></content:encoded></item></channel></rss>
