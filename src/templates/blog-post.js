@@ -33,7 +33,12 @@ const AdditionalInfo = styled.p`
 class BlogPostTemplate extends Component {
   render() {
     const post = this.props.data.markdownRemark
-    const { previous, next } = this.props.pageContext
+
+    // temporary solution until projects template is separated from projects
+    // const { previous, next } = this.props.pageContext
+
+    // temporary solution until projects template is separated from projects
+    const isBlogPage = post.fileAbsolutePath.includes("/blog/")
 
     return (
       <Layout isSingleColLayout>
@@ -42,7 +47,7 @@ class BlogPostTemplate extends Component {
           description={post.frontmatter.description || post.excerpt}
         />
 
-        <Link to="/">← home</Link>
+        <Link to={isBlogPage ? "/#blog" : "/#projects"}>← home</Link>
 
         <Title>{post.frontmatter.title}</Title>
 
@@ -65,7 +70,7 @@ class BlogPostTemplate extends Component {
           style={{ marginBottom: rhythm(1) }}
         />
 
-        <ul
+        {/* <ul
           style={{
             display: `flex`,
             flexWrap: `wrap`,
@@ -89,7 +94,7 @@ class BlogPostTemplate extends Component {
               </Link>
             )}
           </li>
-        </ul>
+        </ul> */}
       </Layout>
     )
   }
@@ -118,6 +123,7 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         description
       }
+      fileAbsolutePath
     }
   }
 `

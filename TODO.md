@@ -26,10 +26,12 @@
 
 - [x] space background reinit on theme change
 
-- [ ] blog post / project post back button to return to hash
+- [x] blog post / project post back button to return to hash
 
 - [ ] projects technology stack + images
 
 - [ ] floating mob
 
 - [ ] sticky mob
+
+- [ ] separate blog template from projects template
