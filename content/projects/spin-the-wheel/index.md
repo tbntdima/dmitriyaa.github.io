@@ -8,3 +8,9 @@ liveUrl: https://dmitriyaa.github.io/react-spin-the-wheel/
 desktopImage: ./screenshot-desktop.jpg
 mobileImage: ./screenshot-mobile.jpg
 ---
+
+## Technology stack
+
+- react
+
+- styled-components

@@ -122,6 +122,16 @@ export const pageQuery = graphql`
         title
         date(formatString: "MMMM DD, YYYY")
         description
+        githubUrl
+        liveUrl
+        desktopImage {
+          name
+          publicURL
+        }
+        mobileImage {
+          name
+          publicURL
+        }
       }
       fileAbsolutePath
     }
