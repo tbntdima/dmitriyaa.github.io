@@ -1,6 +1,6 @@
 # Todo List
 
-- [ ] move design from old version of the site
+- [x] move design from old version of the site
 
   - [x] identify styling methodology - styled-components + [rebassjs](https://github.com/rebassjs/grid)
 
@@ -10,9 +10,9 @@
 
   - [x] introduce redux for theme state control
 
-- [ ] style code block from .md to .html
+- [x] style code block from .md to .html
 
-- [ ] add 'projects' with similar functionality to 'blog'
+- [x] add 'projects' with similar functionality to 'blog'
 
 - [ ] setup gh pages deploy script
 
@@ -24,6 +24,12 @@
 
 - [x] space background control reiniting
 
-- [ ] space background reinit on theme change
+- [x] space background reinit on theme change
 
 - [ ] blog post / project post back button to return to hash
+
+- [ ] projects technology stack + images
+
+- [ ] floating mob
+
+- [ ] sticky mob

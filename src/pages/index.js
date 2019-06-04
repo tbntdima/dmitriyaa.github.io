@@ -26,7 +26,7 @@ class Homepage extends React.Component {
           style={{
             maxWidth: "540px",
           }}
-          mb={rhythm(1.25)}
+          mb={rhythm(1)}
         >
           <Bio />
         </Box>
@@ -37,10 +37,6 @@ class Homepage extends React.Component {
 
         <AnimatedCollapse title="Blog" currentHash={hash}>
           <Blog posts={blogPosts} />
-        </AnimatedCollapse>
-
-        <AnimatedCollapse title="Contact" currentHash={hash}>
-          <p>Contacts</p>
         </AnimatedCollapse>
       </Layout>
     )

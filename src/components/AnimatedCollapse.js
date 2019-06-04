@@ -40,7 +40,7 @@ const AnimatedCollapse = ({
               document.getElementById(id).scrollIntoView({
                 behavior: "smooth",
               })
-            }, animationDuration * 100)
+            }, animationDuration * 200)
           }
         }}
         active={currentHash === newHash}
