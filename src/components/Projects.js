@@ -81,7 +81,7 @@ const Image = styled.img`
   transition: 0.3s;
   &:hover {
     transform: scale(0.99);
-    box-shadow: 3px 3px 65px rgba(0, 0, 0, 0.35);
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.35);
   }
 `
 

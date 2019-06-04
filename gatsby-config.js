@@ -81,8 +81,9 @@ module.exports = {
         start_url: `/`,
         background_color: `#14161e`,
         theme_color: `#47f4cf`,
-        display: `minimal-ui`,
         icon: `content/assets/icon.png`,
+        // display: `minimal-ui`,
+        display: `standalone`,
       },
     },
     `gatsby-plugin-offline`,
@@ -108,6 +109,10 @@ module.exports = {
             }
           }),
       },
+    },
+    {
+      resolve: `gatsby-plugin-styled-components`,
+      options: {},
     },
   ],
 }
