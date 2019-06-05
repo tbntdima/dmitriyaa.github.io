@@ -1,1 +1,0 @@
-{"errors":[{"message":"Field \"mobileImage\" must not have a selection since type \"String\" has no subfields.","locations":[{"line":36,"column":23}]}],"pageContext":{"isCreatedByStatefulCreatePages":true}}
