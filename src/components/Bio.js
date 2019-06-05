@@ -20,7 +20,6 @@ const Bio = () => {
         <a
           href="https://reactjs.org/"
           target="_blank"
-          rel="noreferrer"
           rel="noopener noreferrer"
         >
           React
@@ -32,7 +31,6 @@ const Bio = () => {
         <a
           href="https://www.strv.com/"
           target="_blank"
-          rel="noreferrer"
           rel="noopener noreferrer"
         >
           @STRV
