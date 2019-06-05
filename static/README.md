@@ -4,7 +4,7 @@ My personal workshop as well as my blog where I am learning and writing about ne
 
 Powered by [React](https://reactjs.org/) and [Gatsby](https://github.com/gatsbyjs/gatsby-starter-blog).
 
-Inspired by [@taniarascia]https://twitter.com/taniarascia and [@dan_abramov](https://twitter.com/dan_abramov).
+Inspired by [@taniarascia](https://twitter.com/taniarascia) and [@dan_abramov](https://twitter.com/dan_abramov).
 
 ## To run localy
 
