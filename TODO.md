@@ -11,3 +11,5 @@
 - [ ] persist theme. Right now not possible. Probably because of hydration.
 
 - [ ] add readme file to the master branch
+
+- [ ] cleanup the github pages and add to robots.txt

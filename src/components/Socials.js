@@ -26,8 +26,13 @@ const SocialLink = styled.a`
   }
 `
 
-const SocialBlock = ({ faIcon, url }) => (
-  <SocialLink href={url} target="_blank">
+const SocialBlock = ({ faIcon, ariaLabel, url }) => (
+  <SocialLink
+    href={url}
+    aria-label={`check out my ${ariaLabel} profile`}
+    target="_blank"
+    rel="noreferrer"
+  >
     <FontAwesomeIcon icon={faIcon} />
   </SocialLink>
 )
@@ -42,18 +47,22 @@ const Socials = ({ direction, data }) => {
       <SocialBlock
         faIcon={faGithubAlt}
         url={`https://github.com/${socials.github}`}
+        ariaLabel="github"
       />
       <SocialBlock
         faIcon={faTwitterSquare}
         url={`https://twitter.com/${socials.twitter}`}
+        ariaLabel="twitter"
       />
       <SocialBlock
         faIcon={faLinkedin}
         url={`https://www.linkedin.com/in/${socials.linkedin}`}
+        ariaLabel="linkedin"
       />
       <SocialBlock
         faIcon={faInstagram}
         url={`https://www.instagram.com/${socials.instagram}`}
+        ariaLabel="instagram"
       />
     </Flex>
   )

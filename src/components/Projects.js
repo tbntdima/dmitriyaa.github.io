@@ -118,13 +118,18 @@ const Projects = ({ posts, theme }) => {
                   <ProjectLink
                     href={post.frontmatter.githubUrl}
                     target="_blank"
+                    rel="noreferrer"
                   >
                     <FontAwesomeIcon icon={faGithub} />
                     github
                   </ProjectLink>
                 )}
                 {post.frontmatter.liveUrl && (
-                  <ProjectLink href={post.frontmatter.liveUrl} target="_blank">
+                  <ProjectLink
+                    href={post.frontmatter.liveUrl}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <FontAwesomeIcon icon={faWindowRestore} />
                     live
                   </ProjectLink>
