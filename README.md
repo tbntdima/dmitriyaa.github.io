@@ -17,7 +17,7 @@ git clone https://github.com/dmitriyaa/dmitriyaa.github.io.git
 
 cd dmitriyaa.github.io.git
 
-git checkout origin/developmnet
+git checkout origin/implementation-3.0-gatsby
 
 yarn
 ```
