@@ -1,2 +1,8 @@
 User-agent: *
-Disallow:
+Disallow: /webpack-project-backbone/
+Disallow: /react-redux-calculator/
+Disallow: /next-hello-world/
+Disallow: /radio-free-europe-fe-test/
+Disallow: /thinking-in-react/
+Disallow: /react-router-accordion/
+Disallow: /react-gh-pages-app/
