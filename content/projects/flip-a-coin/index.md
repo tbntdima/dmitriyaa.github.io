@@ -8,3 +8,13 @@ liveUrl: https://dmitriyaa.github.io/react-flip-a-coin-game/
 desktopImage: ./screenshot-desktop.jpg
 mobileImage: ./screenshot-mobile.jpg
 ---
+
+Technology stack
+
+- react
+
+- react-bootstrap
+
+- gsap
+
+- react-resize-detector

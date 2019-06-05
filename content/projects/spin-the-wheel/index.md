@@ -9,8 +9,10 @@ desktopImage: ./screenshot-desktop.jpg
 mobileImage: ./screenshot-mobile.jpg
 ---
 
-## Technology stack
+Technology stack
 
 - react
+
+- react-bootstrap
 
 - styled-components

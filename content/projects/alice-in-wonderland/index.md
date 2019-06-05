@@ -8,3 +8,13 @@ liveUrl: https://dmitriyaa.github.io/react-alice-in-wonderland/
 desktopImage: ./screenshot-desktop.jpg
 mobileImage: ./screenshot-mobile.jpg
 ---
+
+Technology stack
+
+- react
+
+- react-bootstrap
+
+- react-preloading-screen
+
+- styled-components
