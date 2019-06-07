@@ -8,7 +8,7 @@ module.exports = {
       github: `dmitriyaa`,
       instagram: `tbat_dima`,
       linkedin: `dmitriy-an-431465106`,
-      twitter: `just_dmitriy_an`,
+      twitter: `tbat_dima`,
     },
   },
   plugins: [
