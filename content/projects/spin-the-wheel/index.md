@@ -9,10 +9,12 @@ desktopImage: ./screenshot-desktop.jpg
 mobileImage: ./screenshot-mobile.jpg
 ---
 
-Technology stack
+## Technologies / Libraries used
 
 - react
 
 - react-bootstrap
 
 - styled-components
+
+- gh-pages

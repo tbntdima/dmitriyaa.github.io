@@ -9,7 +9,7 @@ desktopImage: ./screenshot-desktop.jpg
 mobileImage: ./screenshot-mobile.jpg
 ---
 
-Technology stack
+## Technologies / Libraries used
 
 - react
 
@@ -18,3 +18,5 @@ Technology stack
 - gsap
 
 - react-resize-detector
+
+- gh-pages

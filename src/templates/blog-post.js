@@ -1,6 +1,10 @@
 import React, { Component } from "react"
 import styled from "styled-components"
 import chroma from "chroma-js"
+import { Box } from "@rebass/grid"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faGithub } from "@fortawesome/free-brands-svg-icons"
+import { faWindowRestore } from "@fortawesome/free-solid-svg-icons"
 import { Link, graphql } from "gatsby"
 
 import About from "../components/About"
@@ -18,6 +22,10 @@ const HorizontalLine = styled.hr`
         .alpha(0.5)};
 `
 
+const Description = styled.p`
+  margin-bottom: ${rhythm(1 / 3)};
+`
+
 const Title = styled.h1`
   ${scale(1.1)};
   margin: 0;
@@ -25,14 +33,46 @@ const Title = styled.h1`
 const AdditionalInfo = styled.p`
   ${scale(-1 / 3)};
   display: block;
-  margin-bottom: ${rhythm(1)};
+  margin-bottom: ${rhythm(1 / 2)};
   color: ${props => props.theme.colorAccent};
   opacity: 0.85;
+`
+
+const ProjectLinks = styled.div`
+  margin-bottom: ${rhythm(1 / 2)};
+  margin-left: ${rhythm(1 / 4)};
+`
+
+const ProjectLink = styled.a`
+  margin-right: ${rhythm(1 / 2)};
+  border-bottom: none;
+  ${scale(-1 / 4)};
+
+  & svg {
+    margin-right: ${rhythm(1 / 4)};
+    font-size: 1.2rem;
+    transition: 0.3s;
+  }
+  &:hover svg {
+    transform: rotate(1turn) scale(1.2);
+  }
+`
+
+const ImagesWrapper = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+`
+
+const Image = styled.img`
+  margin-bottom: 0;
+  border-radius: 4px;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.15);
 `
 
 class BlogPostTemplate extends Component {
   render() {
     const post = this.props.data.markdownRemark
+    const title = post.frontmatter.title
 
     // temporary solution until projects template is separated from projects
     // const { previous, next } = this.props.pageContext
@@ -57,6 +97,70 @@ class BlogPostTemplate extends Component {
           {post.frontmatter.date}
           {` • ${formatReadingTime(post.timeToRead)}`}
         </AdditionalInfo>
+
+        {!isBlogPage && (
+          <Description
+            dangerouslySetInnerHTML={{
+              __html: post.frontmatter.description || post.excerpt,
+            }}
+          />
+        )}
+
+        {(post.frontmatter.githubUrl || post.frontmatter.liveUrl) && (
+          <ProjectLinks>
+            {post.frontmatter.githubUrl && (
+              <ProjectLink
+                href={post.frontmatter.githubUrl}
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FontAwesomeIcon icon={faGithub} />
+                github
+              </ProjectLink>
+            )}
+            {post.frontmatter.liveUrl && (
+              <ProjectLink
+                href={post.frontmatter.liveUrl}
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FontAwesomeIcon icon={faWindowRestore} />
+                live
+              </ProjectLink>
+            )}
+          </ProjectLinks>
+        )}
+
+        <ImagesWrapper>
+          <Box
+            order={[2, 1, 1]}
+            width={[1, 1 / 3, 1 / 3]}
+            p={2}
+            style={{ textAlign: "center" }}
+          >
+            {post.frontmatter.mobileImage &&
+              post.frontmatter.mobileImage.name !== "no-image" && (
+                <Image
+                  src={post.frontmatter.mobileImage.publicURL}
+                  alt={title}
+                />
+              )}
+          </Box>
+          <Box
+            order={[1, 2, 2]}
+            width={[1, 2 / 3, 2 / 3]}
+            p={2}
+            style={{ textAlign: "center" }}
+          >
+            {post.frontmatter.desktopImage &&
+              post.frontmatter.desktopImage.name !== "no-image" && (
+                <Image
+                  src={post.frontmatter.desktopImage.publicURL}
+                  alt={title}
+                />
+              )}
+          </Box>
+        </ImagesWrapper>
 
         <div
           style={{ marginBottom: rhythm(3) }}
