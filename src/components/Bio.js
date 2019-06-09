@@ -26,7 +26,7 @@ const Bio = () => {
         </a>{" "}
         library and its huge ecosystem.
       </p>
-      <p style={{ marginBottom: rhythm(1 / 2) }}>
+      {/* <p style={{ marginBottom: rhythm(1 / 2) }}>
         Working on{" "}
         <a
           href="https://www.strv.com/"
@@ -35,7 +35,7 @@ const Bio = () => {
         >
           @STRV
         </a>
-      </p>
+      </p> */}
     </div>
   )
 }

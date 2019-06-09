@@ -23,6 +23,10 @@ const GlobalStyle = createGlobalStyle`
     color: ${props => props.theme.colorMain};
   }
 
+  em, strong {
+    color: ${props => props.theme.colorMain};
+  }
+
   blockquote {
     color: ${props => props.theme.colorText};
   }
