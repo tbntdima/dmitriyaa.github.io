@@ -6,7 +6,7 @@ module.exports = {
     siteUrl: `https://dmitriyaa.github.io/`,
     social: {
       github: `dmitriyaa`,
-      instagram: `tbat_dima`,
+      instagram: `tbnt_dima`,
       linkedin: `dmitriy-an-431465106`,
       twitter: `tbnt_dima`,
     },
