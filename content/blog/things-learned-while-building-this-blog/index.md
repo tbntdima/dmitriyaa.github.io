@@ -1,5 +1,5 @@
 ---
-title: On road learnings
+title: Things learnet while developing this blog
 date: "2019-05-14"
 tags: ["regular"]
 description: (WIP) What I've learnet while building this blog with GatsbyJS
