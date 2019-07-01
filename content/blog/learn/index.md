@@ -29,6 +29,11 @@ For some topics I might even write a separate blog post. We will see :)
     - precommit, prepush
     - lint-staged
 
+- [] deployment
+
+  - netlify
+  - heroku
+
 - [][web fundementals](https://developers.google.com/web/fundamentals/)
 
 - [][survive js](https://survivejs.com/)
