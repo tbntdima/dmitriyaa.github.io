@@ -19,3 +19,16 @@ For some topics I might even write a separate blog post. We will see :)
   - Dan Abramov's [course](https://egghead.io/courses/getting-started-with-redux) on egghead.io is great for understanding the concept, but not enough to be able to use redux right after the course.
 
   - Pluralsign's [course](<(https://app.pluralsight.com/library/courses/react-redux-react-router-es6)>) by Cory House gave me a more or less good understanding of the flow and project structure with react.
+
+- [] git
+
+  - [strv guide lines](https://github.com/strvcom/strv-docs/blob/master/guides/git.md)
+
+  - have a look at
+    - husky
+    - precommit, prepush
+    - lint-staged
+
+- [][web fundementals](https://developers.google.com/web/fundamentals/)
+
+- [][survive js](https://survivejs.com/)
