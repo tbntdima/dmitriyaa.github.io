@@ -28,6 +28,8 @@ For some topics I might even write a separate blog post. We will see :)
     - husky
     - precommit, prepush
     - lint-staged
+    
+- [] test
 
 - [] deployment
 
