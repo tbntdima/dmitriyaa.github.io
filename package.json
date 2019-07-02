@@ -78,7 +78,7 @@
   },
   "husky": {
     "hooks": {
-      "post-commit": "yarn deploy"
+      "pre-push": "yarn deploy"
     }
   }
 }
