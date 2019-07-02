@@ -1,1 +1,0 @@
-{"errors":[{"message":"Cannot query field \"desctopImage\" on type \"MarkdownRemarkFrontmatter\". Did you mean \"desktopImage\"?","locations":[{"line":32,"column":11}]},{"message":"Cannot query field \"mobileImage\" on type \"MarkdownRemarkFrontmatter\".","locations":[{"line":36,"column":11}]}],"pageContext":{"isCreatedByStatefulCreatePages":true}}
